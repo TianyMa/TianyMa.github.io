@@ -13,7 +13,7 @@ math: true
 mermaid: true
 ---
 
-![Desktop View](/images/Feb-2024/w-d-flow.png){: width="972" height="589" }
+![Desktop View](/images/2024/workflow-diagram-flow.png){: width="972" height="589" }
 _A systematic graph of wind turbine for testing purpose_
 
 This weekly update provides a comprehensive overview of the key developments and noteworthy events from the past week.

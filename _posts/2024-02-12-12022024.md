@@ -13,7 +13,7 @@ math: true
 mermaid: true
 
 ---
-![Desktop View](/images/Feb-2024/f-d.jpg){: width="972" height="589" }
+![Desktop View](/images/2024/flow-diagram-system.jpg){: width="972" height="589" }
 _Fluid dynamics is a key part of my phd thesis_
 
 
