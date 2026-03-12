@@ -1,11 +1,20 @@
 <!-- Enhanced Features Loader -->
 <!-- This file loads all custom enhancements -->
 
-<!-- Load Custom CSS -->
+<!-- Core Enhancements CSS -->
 <link rel="stylesheet" href="{{ '/assets/css/enhancements.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/search.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/research-map.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/charts.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/tag-cloud.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/related-posts.css' | relative_url }}">
 
-<!-- Load Custom JavaScript -->
+<!-- Core Enhancements JavaScript -->
 <script defer src="{{ '/assets/js/enhancements.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/search.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/research-map.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/charts.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/tag-cloud.js' | relative_url }}"></script>
 
 <!-- Font Awesome (if not already loaded) -->
 {% unless site.fontawesome_loaded %}
@@ -15,5 +24,11 @@
       referrerpolicy="no-referrer">
 {% endunless %}
 
+<!-- Structured Data -->
+{% include schema-website.html %}
+{% include schema-person.html %}
+{% include schema-article.html %}
+
 <!-- Reading Progress Bar will be injected by JavaScript -->
 <!-- Back to Top Button will be injected by JavaScript -->
+<!-- Search Overlay will be injected by JavaScript -->
