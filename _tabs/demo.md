@@ -95,17 +95,17 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="popular-tags">
   <h3 class="popular-tags-title">Popular Research Topics</h3>
   <div class="popular-tags-list">
-    <a href="/tags/energy-systems" class="popular-tag">
+    <a href="/tags" class="popular-tag">
       <span class="popular-tag-icon"><i class="fas fa-bolt"></i></span>
       <span>Energy Systems</span>
       <span class="popular-tag-count">15</span>
     </a>
-    <a href="/tags/machine-learning" class="popular-tag">
+    <a href="/tags" class="popular-tag">
       <span class="popular-tag-icon"><i class="fas fa-brain"></i></span>
       <span>Machine Learning</span>
       <span class="popular-tag-count">12</span>
     </a>
-    <a href="/tags/optimization" class="popular-tag">
+    <a href="/tags" class="popular-tag">
       <span class="popular-tag-icon"><i class="fas fa-chart-line"></i></span>
       <span>Optimization</span>
       <span class="popular-tag-count">10</span>

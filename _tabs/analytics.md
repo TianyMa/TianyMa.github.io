@@ -122,22 +122,22 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="popular-tags">
   <h3 class="popular-tags-title">Most Active Research Areas</h3>
   <div class="popular-tags-list">
-    <a href="/tags/energy-systems" class="popular-tag">
+    <a href="/tags" class="popular-tag">
       <span class="popular-tag-icon"><i class="fas fa-bolt"></i></span>
       <span>Energy Systems</span>
       <span class="popular-tag-count">15</span>
     </a>
-    <a href="/tags/machine-learning" class="popular-tag">
+    <a href="/tags" class="popular-tag">
       <span class="popular-tag-icon"><i class="fas fa-brain"></i></span>
       <span>Machine Learning</span>
       <span class="popular-tag-count">12</span>
     </a>
-    <a href="/tags/optimization" class="popular-tag">
+    <a href="/tags" class="popular-tag">
       <span class="popular-tag-icon"><i class="fas fa-chart-line"></i></span>
       <span>Optimization</span>
       <span class="popular-tag-count">10</span>
     </a>
-    <a href="/tags/sustainability" class="popular-tag">
+    <a href="/tags" class="popular-tag">
       <span class="popular-tag-icon"><i class="fas fa-leaf"></i></span>
       <span>Sustainability</span>
       <span class="popular-tag-count">8</span>
@@ -151,16 +151,16 @@ document.addEventListener('DOMContentLoaded', function() {
 // Initialize tag cloud
 document.addEventListener('DOMContentLoaded', function() {
   const tags = [
-    { name: 'Energy Systems', count: 15, url: '/tags/energy-systems' },
-    { name: 'Machine Learning', count: 12, url: '/tags/machine-learning' },
-    { name: 'Optimization', count: 10, url: '/tags/optimization' },
-    { name: 'Data Science', count: 8, url: '/tags/data-science' },
-    { name: 'Sustainability', count: 8, url: '/tags/sustainability' },
-    { name: 'PEMWE', count: 6, url: '/tags/pemwe' },
-    { name: 'Python', count: 5, url: '/tags/python' },
-    { name: 'Research', count: 5, url: '/tags/research' },
-    { name: 'Deep Learning', count: 4, url: '/tags/deep-learning' },
-    { name: 'Climate', count: 3, url: '/tags/climate' }
+    { name: 'Energy Systems', count: 15, url: '/tags' },
+    { name: 'Machine Learning', count: 12, url: '/tags' },
+    { name: 'Optimization', count: 10, url: '/tags' },
+    { name: 'Data Science', count: 8, url: '/tags' },
+    { name: 'Sustainability', count: 8, url: '/tags' },
+    { name: 'PEMWE', count: 6, url: '/tags' },
+    { name: 'Python', count: 5, url: '/tags' },
+    { name: 'Research', count: 5, url: '/tags' },
+    { name: 'Deep Learning', count: 4, url: '/tags' },
+    { name: 'Climate', count: 3, url: '/tags' }
   ];
 
   new TagCloud('tag-cloud', tags);
