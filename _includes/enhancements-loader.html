@@ -1,0 +1,19 @@
+<!-- Enhanced Features Loader -->
+<!-- This file loads all custom enhancements -->
+
+<!-- Load Custom CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/enhancements.css' | relative_url }}">
+
+<!-- Load Custom JavaScript -->
+<script defer src="{{ '/assets/js/enhancements.js' | relative_url }}"></script>
+
+<!-- Font Awesome (if not already loaded) -->
+{% unless site.fontawesome_loaded %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+{% endunless %}
+
+<!-- Reading Progress Bar will be injected by JavaScript -->
+<!-- Back to Top Button will be injected by JavaScript -->

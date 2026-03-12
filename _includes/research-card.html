@@ -1,0 +1,76 @@
+<!-- Research Card Component -->
+<!-- Usage: {% include research-card.html
+     title="Paper Title"
+     image="/images/research.jpg"
+     venue="Conference Name"
+     year="2024"
+     description="Brief description"
+     tags="Machine Learning,Energy Systems"
+     paper_url="https://..."
+     code_url="https://..."
+%} -->
+
+<div class="research-card fade-in-up">
+  {% if include.image %}
+  <div style="overflow: hidden;">
+    <img src="{{ include.image }}"
+         alt="{{ include.title }}"
+         class="research-card-image"
+         loading="lazy">
+  </div>
+  {% endif %}
+
+  <div class="research-card-content">
+    <h3 class="research-card-title">{{ include.title }}</h3>
+
+    {% if include.venue or include.year %}
+    <p class="research-card-meta">
+      {% if include.venue %}{{ include.venue }}{% endif %}
+      {% if include.venue and include.year %} • {% endif %}
+      {% if include.year %}{{ include.year }}{% endif %}
+    </p>
+    {% endif %}
+
+    {% if include.description %}
+    <p class="research-card-description">{{ include.description }}</p>
+    {% endif %}
+
+    {% if include.tags %}
+    <div class="research-card-tags">
+      {% assign tag_list = include.tags | split: "," %}
+      {% for tag in tag_list %}
+        <span class="research-card-tag">{{ tag | strip }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="research-card-actions">
+      {% if include.paper_url %}
+      <a href="{{ include.paper_url }}"
+         class="research-card-btn research-card-btn-primary"
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fas fa-file-pdf"></i> Paper
+      </a>
+      {% endif %}
+
+      {% if include.code_url %}
+      <a href="{{ include.code_url }}"
+         class="research-card-btn research-card-btn-secondary"
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fab fa-github"></i> Code
+      </a>
+      {% endif %}
+
+      {% if include.project_url %}
+      <a href="{{ include.project_url }}"
+         class="research-card-btn research-card-btn-secondary"
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fas fa-external-link-alt"></i> Project
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
