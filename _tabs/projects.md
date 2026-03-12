@@ -15,19 +15,19 @@ My work focuses on **long-horizon systems modelling**, **scenario-based analysis
 
 <div style="text-align: center; width: 100%; margin: 1.25rem 0 2rem 0;">
   <a href="/posts/03242024">
-      <img src="/images/mit.webp" alt="MIT" style="width:auto; height:100px; margin-right:3%;" />
+      <img src="/images/logos/mit.webp" alt="MIT" style="width:auto; height:100px; margin-right:3%;" />
   </a>
   <a href="/posts/03182024">
-      <img src="/images/UCL_logo.png" alt="UCL" style="width:auto; height:100px; margin-right:3%;" />
+      <img src="/images/logos/UCL_logo.png" alt="UCL" style="width:auto; height:100px; margin-right:3%;" />
   </a>
   <a href="/posts/03112024">
-      <img src="/images/UoB.png" alt="University of Birmingham" style="width:auto; height:100px; margin-right:3%;" />
+      <img src="/images/logos/UoB.png" alt="University of Birmingham" style="width:auto; height:100px; margin-right:3%;" />
   </a>
   <a href="/posts/03042024">
-      <img src="/images/UoN.png" alt="University of Nottingham" style="width:auto; height:100px; margin-right:3%;" />
+      <img src="/images/logos/UoN.png" alt="University of Nottingham" style="width:auto; height:100px; margin-right:3%;" />
   </a>
   <a href="/posts/02262024">
-      <img src="/images/SEU.png" alt="Southeast University" style="width:auto; height:100px;" />
+      <img src="/images/logos/SEU.png" alt="Southeast University" style="width:auto; height:100px;" />
   </a>
 </div>
 
