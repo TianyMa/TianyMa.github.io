@@ -5,225 +5,124 @@ icon: fas fa-chart-line
 order: 7
 ---
 
-# Research Analytics & Visualizations
-
-This page showcases my research activities, collaborations, and impact through interactive visualizations.
-
----
-
-## 📊 Research Statistics
-
-<div class="stats-dashboard">
-  <div class="stat-card">
-    <div class="stat-icon publications">
-      <i class="fas fa-file-alt"></i>
-    </div>
-    <div class="stat-number" data-count="15">15</div>
-    <div class="stat-label">Publications</div>
-    <div class="stat-change positive">
-      <i class="fas fa-arrow-up"></i> +3 this year
-    </div>
-  </div>
-
-  <div class="stat-card">
-    <div class="stat-icon projects">
-      <i class="fas fa-project-diagram"></i>
-    </div>
-    <div class="stat-number" data-count="8">8</div>
-    <div class="stat-label">Active Projects</div>
-    <div class="stat-change positive">
-      <i class="fas fa-arrow-up"></i> +2 this year
-    </div>
-  </div>
-
-  <div class="stat-card">
-    <div class="stat-icon collaborations">
-      <i class="fas fa-users"></i>
-    </div>
-    <div class="stat-number" data-count="12">12</div>
-    <div class="stat-label">Collaborations</div>
-    <div class="stat-change positive">
-      <i class="fas fa-arrow-up"></i> +4 this year
-    </div>
-  </div>
-
-  <div class="stat-card">
-    <div class="stat-icon citations">
-      <i class="fas fa-quote-right"></i>
-    </div>
-    <div class="stat-number" data-count="67">67</div>
-    <div class="stat-label">Citations</div>
-    <div class="stat-change positive">
-      <i class="fas fa-arrow-up"></i> +15 this year
-    </div>
-  </div>
-</div>
-
----
-
-## 🗺️ Global Research Collaborations
-
-<div id="research-map" class="research-map-container" data-research-map></div>
-
-<p style="text-align: center; color: #666; font-size: 0.875rem; margin-top: 1rem;">
-  Interactive map showing research institutions and collaborations worldwide
-</p>
-
----
-
-## 📈 Research Trends
-
-<div class="charts-grid">
-  <div class="chart-container">
-    <h3 class="chart-title">Publication Trend</h3>
-    <div class="chart-wrapper">
-      <canvas id="publication-trend-chart"></canvas>
-    </div>
-  </div>
-
-  <div class="chart-container">
-    <h3 class="chart-title">Research Areas Distribution</h3>
-    <div class="chart-wrapper">
-      <canvas id="research-areas-chart"></canvas>
-    </div>
-  </div>
-
-  <div class="chart-container">
-    <h3 class="chart-title">Skills & Expertise</h3>
-    <div class="chart-wrapper">
-      <canvas id="skills-radar-chart"></canvas>
-    </div>
-  </div>
-
-  <div class="chart-container">
-    <h3 class="chart-title">Citations Growth</h3>
-    <div class="chart-wrapper">
-      <canvas id="citations-chart"></canvas>
-    </div>
-  </div>
-</div>
-
-<script>
-// Initialize charts when page loads
-document.addEventListener('DOMContentLoaded', function() {
-  if (window.researchCharts) {
-    researchCharts.createPublicationTrendChart('publication-trend-chart');
-    researchCharts.createResearchAreasChart('research-areas-chart');
-    researchCharts.createSkillsRadarChart('skills-radar-chart');
-    researchCharts.createCitationsChart('citations-chart');
-  }
-});
-</script>
-
----
-
-## 🏷️ Research Topics
-
-<div class="popular-tags">
-  <h3 class="popular-tags-title">Most Active Research Areas</h3>
-  <div class="popular-tags-list">
-    <a href="/tags" class="popular-tag">
-      <span class="popular-tag-icon"><i class="fas fa-bolt"></i></span>
-      <span>Energy Systems</span>
-      <span class="popular-tag-count">15</span>
-    </a>
-    <a href="/tags" class="popular-tag">
-      <span class="popular-tag-icon"><i class="fas fa-brain"></i></span>
-      <span>Machine Learning</span>
-      <span class="popular-tag-count">12</span>
-    </a>
-    <a href="/tags" class="popular-tag">
-      <span class="popular-tag-icon"><i class="fas fa-chart-line"></i></span>
-      <span>Optimization</span>
-      <span class="popular-tag-count">10</span>
-    </a>
-    <a href="/tags" class="popular-tag">
-      <span class="popular-tag-icon"><i class="fas fa-leaf"></i></span>
-      <span>Sustainability</span>
-      <span class="popular-tag-count">8</span>
-    </a>
-  </div>
-</div>
-
-<div id="tag-cloud" class="tag-cloud-container" data-tag-cloud></div>
-
-<script>
-// Initialize tag cloud
-document.addEventListener('DOMContentLoaded', function() {
-  const tags = [
-    { name: 'Energy Systems', count: 15, url: '/tags' },
-    { name: 'Machine Learning', count: 12, url: '/tags' },
-    { name: 'Optimization', count: 10, url: '/tags' },
-    { name: 'Data Science', count: 8, url: '/tags' },
-    { name: 'Sustainability', count: 8, url: '/tags' },
-    { name: 'PEMWE', count: 6, url: '/tags' },
-    { name: 'Python', count: 5, url: '/tags' },
-    { name: 'Research', count: 5, url: '/tags' },
-    { name: 'Deep Learning', count: 4, url: '/tags' },
-    { name: 'Climate', count: 3, url: '/tags' }
-  ];
-
-  new TagCloud('tag-cloud', tags);
-});
-</script>
-
----
-
-## 📚 Recent Publications
-
-<div class="publication-list">
-  <div class="publication-item">
-    <h4>Multi-electrochemical Energy Storage Optimization</h4>
-    <p class="publication-venue">Applied Energy, 2024</p>
-    <p class="publication-description">A novel optimization framework for multi-electrochemical energy storage systems considering uncertainty and long-term scenarios</p>
-    <div class="publication-tags">
-      <span class="tag">Optimization</span>
-      <span class="tag">Energy Storage</span>
-      <span class="tag">Machine Learning</span>
-    </div>
-  </div>
-
-  <div class="publication-item">
-    <h4>PEM Water Electrolyzer Performance Prediction</h4>
-    <p class="publication-venue">International Journal of Hydrogen Energy, 2024</p>
-    <p class="publication-description">Data-driven prediction of PEM water electrolyzer component performance using deep learning and data augmentation</p>
-    <div class="publication-tags">
-      <span class="tag">Machine Learning</span>
-      <span class="tag">PEMWE</span>
-      <span class="tag">Data Science</span>
-    </div>
-  </div>
-
-  <div class="publication-item">
-    <h4>Sustainable Energy Systems Modeling</h4>
-    <p class="publication-venue">Energy, 2023</p>
-    <p class="publication-description">Long-horizon scenario modeling for sustainable energy systems with policy integration</p>
-    <div class="publication-tags">
-      <span class="tag">Energy Systems</span>
-      <span class="tag">Sustainability</span>
-      <span class="tag">Modeling</span>
-    </div>
-  </div>
-</div>
-
 <style>
-.publication-list {
+/* Analytics Page Styles */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-box {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stat-box-number {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stat-box-label {
+  font-size: 1rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #1976d2;
+  margin: 2rem 0;
+}
+
+.map-placeholder i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.chart-placeholder {
+  width: 100%;
+  height: 300px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  margin: 1rem 0;
+}
+
+.tags-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  color: white;
+  margin: 2rem 0;
+}
+
+.tags-section h3 {
+  color: white;
+  margin-top: 0;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.tag-item {
+  padding: 0.5rem 1.25rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.tag-item:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.publications-list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   margin: 2rem 0;
 }
 
-.publication-item {
-  background: var(--card-bg, white);
+.publication-card {
+  background: white;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #2196F3;
 }
 
-.publication-item h4 {
+.publication-card h4 {
   margin: 0 0 0.5rem 0;
-  color: var(--heading-color);
+  color: #333;
 }
 
 .publication-venue {
@@ -235,6 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
 .publication-description {
   margin: 0 0 1rem 0;
   line-height: 1.6;
+  color: #555;
 }
 
 .publication-tags {
@@ -243,22 +143,180 @@ document.addEventListener('DOMContentLoaded', function() {
   gap: 0.5rem;
 }
 
-.publication-tags .tag {
+.publication-tag {
   background: #e3f2fd;
   color: #1976d2;
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
   font-size: 0.8rem;
 }
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-box-number {
+    font-size: 2rem;
+  }
+
+  .map-placeholder {
+    height: 300px;
+  }
+}
 </style>
+
+# 📊 Research Analytics & Visualizations
+
+This page showcases my research activities, collaborations, and impact through data and visualizations.
 
 ---
 
-<div style="text-align: center; margin: 3rem 0;">
-  <p style="color: #666; font-size: 0.875rem;">
-    All visualizations are interactive. Hover over charts for detailed information.
-  </p>
-  <p style="color: #666; font-size: 0.875rem;">
-    Data updated: {{ site.time | date: "%B %Y" }}
-  </p>
+## 📈 Research Statistics
+
+<div class="stats-grid">
+  <div class="stat-box">
+    <div class="stat-box-number">15</div>
+    <div class="stat-box-label">Publications</div>
+  </div>
+
+  <div class="stat-box">
+    <div class="stat-box-number">8</div>
+    <div class="stat-box-label">Projects</div>
+  </div>
+
+  <div class="stat-box">
+    <div class="stat-box-number">12</div>
+    <div class="stat-box-label">Collaborations</div>
+  </div>
+
+  <div class="stat-box">
+    <div class="stat-box-number">67</div>
+    <div class="stat-box-label">Citations</div>
+  </div>
+</div>
+
+---
+
+## 🗺️ Global Research Collaborations
+
+<div class="map-placeholder">
+  <i class="fas fa-map-marked-alt"></i>
+  <h3>Interactive Research Map</h3>
+  <p>Collaborations with institutions worldwide</p>
+</div>
+
+<div style="text-align: center; color: #666; font-size: 0.875rem;">
+  <p>Research collaborations with UCL, MIT, Tsinghua, SJTU, Cambridge, and more</p>
+</div>
+
+---
+
+## 📊 Research Trends
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
+  <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+    <h3 style="margin-top: 0; color: #2196F3;">Publication Trend</h3>
+    <div class="chart-placeholder">
+      <p>📈 Growing publication record</p>
+    </div>
+  </div>
+
+  <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+    <h3 style="margin-top: 0; color: #4CAF50;">Research Areas</h3>
+    <div class="chart-placeholder">
+      <p>🎯 Diverse research focus</p>
+    </div>
+  </div>
+</div>
+
+---
+
+## 🏷️ Research Topics
+
+<div class="tags-section">
+  <h3>Most Active Research Areas</h3>
+  <div class="tags-list">
+    <a href="/tags" class="tag-item">⚡ Energy Systems (15)</a>
+    <a href="/tags" class="tag-item">🧠 Machine Learning (12)</a>
+    <a href="/tags" class="tag-item">📈 Optimization (10)</a>
+    <a href="/tags" class="tag-item">🔬 Data Science (8)</a>
+    <a href="/tags" class="tag-item">🌱 Sustainability (8)</a>
+    <a href="/tags" class="tag-item">⚙️ PEMWE (6)</a>
+    <a href="/tags" class="tag-item">🐍 Python (5)</a>
+    <a href="/tags" class="tag-item">📚 Research (5)</a>
+  </div>
+</div>
+
+---
+
+## 📚 Recent Publications
+
+<div class="publications-list">
+  <div class="publication-card">
+    <h4>Multi-electrochemical Energy Storage Optimization</h4>
+    <p class="publication-venue">Applied Energy, 2024</p>
+    <p class="publication-description">A novel optimization framework for multi-electrochemical energy storage systems considering uncertainty and long-term scenarios</p>
+    <div class="publication-tags">
+      <span class="publication-tag">Optimization</span>
+      <span class="publication-tag">Energy Storage</span>
+      <span class="publication-tag">Machine Learning</span>
+    </div>
+  </div>
+
+  <div class="publication-card">
+    <h4>PEM Water Electrolyzer Performance Prediction</h4>
+    <p class="publication-venue">International Journal of Hydrogen Energy, 2024</p>
+    <p class="publication-description">Data-driven prediction of PEM water electrolyzer component performance using deep learning and data augmentation</p>
+    <div class="publication-tags">
+      <span class="publication-tag">Machine Learning</span>
+      <span class="publication-tag">PEMWE</span>
+      <span class="publication-tag">Data Science</span>
+    </div>
+  </div>
+
+  <div class="publication-card">
+    <h4>Sustainable Energy Systems Modeling</h4>
+    <p class="publication-venue">Energy, 2023</p>
+    <p class="publication-description">Long-horizon scenario modeling for sustainable energy systems with policy integration</p>
+    <div class="publication-tags">
+      <span class="publication-tag">Energy Systems</span>
+      <span class="publication-tag">Sustainability</span>
+      <span class="publication-tag">Modeling</span>
+    </div>
+  </div>
+</div>
+
+---
+
+## 🎓 Research Focus Areas
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+  <div style="padding: 1.5rem; background: #e3f2fd; border-radius: 8px; border-left: 4px solid #2196F3;">
+    <h4 style="margin-top: 0; color: #1976d2;">Energy Systems</h4>
+    <p style="margin: 0; color: #555;">Multi-electrochemical energy storage, optimization, and long-horizon modeling</p>
+  </div>
+
+  <div style="padding: 1.5rem; background: #f3e5f5; border-radius: 8px; border-left: 4px solid #9C27B0;">
+    <h4 style="margin-top: 0; color: #7B1FA2;">Machine Learning</h4>
+    <p style="margin: 0; color: #555;">Deep learning, data augmentation, and predictive modeling</p>
+  </div>
+
+  <div style="padding: 1.5rem; background: #e8f5e9; border-radius: 8px; border-left: 4px solid #4CAF50;">
+    <h4 style="margin-top: 0; color: #388E3C;">Optimization</h4>
+    <p style="margin: 0; color: #555;">Decision-oriented optimization and uncertainty quantification</p>
+  </div>
+
+  <div style="padding: 1.5rem; background: #fff3e0; border-radius: 8px; border-left: 4px solid #FF9800;">
+    <h4 style="margin-top: 0; color: #F57C00;">Sustainability</h4>
+    <p style="margin: 0; color: #555;">Climate policy integration and sustainable energy transitions</p>
+  </div>
+</div>
+
+---
+
+<div style="text-align: center; margin: 3rem 0; padding: 2rem; background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%); border-radius: 12px; color: white;">
+  <h3 style="margin: 0 0 1rem 0; color: white;">📊 Interactive Features Available</h3>
+  <p style="margin: 0; opacity: 0.9;">Full interactive charts and maps will be enabled when JavaScript libraries are loaded</p>
+  <p style="margin-top: 1rem; opacity: 0.9;">Data updated: {{ site.time | date: "%B %Y" }}</p>
 </div>
