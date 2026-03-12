@@ -171,39 +171,86 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ## 📚 Recent Publications
 
-<div class="research-cards">
-  {% include research-card.html
-     title="Multi-electrochemical Energy Storage Optimization"
-     image="/images/UCL-2024/mes-optimization-framework.png"
-     venue="Applied Energy"
-     year="2024"
-     description="A novel optimization framework for multi-electrochemical energy storage systems considering uncertainty and long-term scenarios"
-     tags="Optimization,Energy Storage,Machine Learning"
-     paper_url="#"
-     code_url="#"
-  %}
+<div class="publication-list">
+  <div class="publication-item">
+    <h4>Multi-electrochemical Energy Storage Optimization</h4>
+    <p class="publication-venue">Applied Energy, 2024</p>
+    <p class="publication-description">A novel optimization framework for multi-electrochemical energy storage systems considering uncertainty and long-term scenarios</p>
+    <div class="publication-tags">
+      <span class="tag">Optimization</span>
+      <span class="tag">Energy Storage</span>
+      <span class="tag">Machine Learning</span>
+    </div>
+  </div>
 
-  {% include research-card.html
-     title="PEM Water Electrolyzer Performance Prediction"
-     image="/images/UCL-2024/pemwe-system-prediction-framework.png"
-     venue="International Journal of Hydrogen Energy"
-     year="2024"
-     description="Data-driven prediction of PEM water electrolyzer component performance using deep learning and data augmentation"
-     tags="Machine Learning,PEMWE,Data Science"
-     paper_url="#"
-     code_url="#"
-  %}
+  <div class="publication-item">
+    <h4>PEM Water Electrolyzer Performance Prediction</h4>
+    <p class="publication-venue">International Journal of Hydrogen Energy, 2024</p>
+    <p class="publication-description">Data-driven prediction of PEM water electrolyzer component performance using deep learning and data augmentation</p>
+    <div class="publication-tags">
+      <span class="tag">Machine Learning</span>
+      <span class="tag">PEMWE</span>
+      <span class="tag">Data Science</span>
+    </div>
+  </div>
 
-  {% include research-card.html
-     title="Sustainable Energy Systems Modeling"
-     image="/images/2024/energy-system-outline-modified.png"
-     venue="Energy"
-     year="2023"
-     description="Long-horizon scenario modeling for sustainable energy systems with policy integration"
-     tags="Energy Systems,Sustainability,Modeling"
-     paper_url="#"
-  %}
+  <div class="publication-item">
+    <h4>Sustainable Energy Systems Modeling</h4>
+    <p class="publication-venue">Energy, 2023</p>
+    <p class="publication-description">Long-horizon scenario modeling for sustainable energy systems with policy integration</p>
+    <div class="publication-tags">
+      <span class="tag">Energy Systems</span>
+      <span class="tag">Sustainability</span>
+      <span class="tag">Modeling</span>
+    </div>
+  </div>
 </div>
+
+<style>
+.publication-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.publication-item {
+  background: var(--card-bg, white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.publication-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--heading-color);
+}
+
+.publication-venue {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.publication-description {
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+}
+
+.publication-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.publication-tags .tag {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+</style>
 
 ---
 
