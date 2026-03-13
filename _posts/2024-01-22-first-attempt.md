@@ -1,13 +1,13 @@
 ---
-title: 01232024 weekly update
+title: "Weekly Update: First Workflow Diagram Attempt"
+description: "First attempt at creating workflow diagrams and testing LaTeX math expressions for research documentation."
 date: 2024-01-22 01:13:00 +0000
-<author_id>:
-  name: <Tianyi MA>
-  github: <TSdreamer>
-  url: <tsdreamer.github.io>
+author_id:
+  - name: Tianyi MA
+    github: TSdreamer
+    url: https://tianyma.github.io
 categories: [PhD Life]
 tags: [weekly updates]
-
 comments: true
 math: true
 mermaid: true

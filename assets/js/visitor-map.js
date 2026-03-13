@@ -6,19 +6,9 @@
 (function() {
   'use strict';
 
-  // Check if we should show the widget
-  function shouldShowWidget() {
-    const path = window.location.pathname;
-    // Show on homepage only
-    return path === '/' || path === '/index.html' || path.endsWith('/');
-  }
-
   // Create and initialize widget
   function initVisitorMap() {
-    if (!shouldShowWidget()) {
-      console.log('Visitor map: Not on homepage, skipping');
-      return;
-    }
+    // Always show the widget
 
     console.log('Visitor map: Initializing...');
 

@@ -199,10 +199,6 @@ Based on my Google Scholar profile - Real publication data from 2021 to present.
     <div class="stat-box-label">h-index</div>
   </div>
 
-  <div class="stat-box">
-    <div class="stat-box-number">1</div>
-    <div class="stat-box-label">i10-index</div>
-  </div>
 </div>
 
 ---
