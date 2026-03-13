@@ -258,10 +258,28 @@ title: Projects
   color: #cdd6f4;
 }
 
+[data-mode="dark"] .institution-card img {
+  background: white;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
 [data-mode="dark"] .institution-card-name,
 [data-mode="dark"] .project-card-description,
 [data-mode="dark"] .methodology-item p {
   color: #bac2de;
+}
+
+[data-mode="dark"] .focus-area-card p {
+  color: #bac2de;
+}
+
+[data-mode="dark"] .focus-area-card h3 {
+  color: #89b4fa;
+}
+
+[data-mode="dark"] .focus-area-card {
+  border-top-color: #89b4fa;
 }
 
 [data-mode="dark"] .methodology-section {
@@ -301,14 +319,24 @@ title: Projects
 ## 🏛️ Institutional Collaborations
 
 <div class="institutions-grid">
+  <a href="/posts/03182024/" class="institution-card">
+    <img src="/images/logos/UCL_logo.png" alt="UCL">
+    <div class="institution-card-name">University College London</div>
+  </a>
+
   <a href="/posts/03242024/" class="institution-card">
     <img src="/images/logos/mit.webp" alt="MIT">
     <div class="institution-card-name">MIT</div>
   </a>
 
-  <a href="/posts/03182024/" class="institution-card">
-    <img src="/images/logos/UCL_logo.png" alt="UCL">
-    <div class="institution-card-name">University College London</div>
+  <a href="#" class="institution-card">
+    <img src="/images/logos/HW.png" alt="Huawei">
+    <div class="institution-card-name">Huawei Research</div>
+  </a>
+
+  <a href="#" class="institution-card">
+    <img src="/images/logos/GEIRI.png" alt="GEIRI">
+    <div class="institution-card-name">GEIRI Europe</div>
   </a>
 
   <a href="/posts/17052025/" class="institution-card">
@@ -316,24 +344,19 @@ title: Projects
     <div class="institution-card-name">Southeast University</div>
   </a>
 
-  <a href="/posts/18052025/" class="institution-card">
-    <img src="/images/logos/UoB.png" alt="Tsinghua">
-    <div class="institution-card-name">Tsinghua University</div>
+  <a href="/posts/03042024/" class="institution-card">
+    <img src="/images/logos/UoN.png" alt="UoN">
+    <div class="institution-card-name">University of Nottingham</div>
   </a>
 
-  <a href="/posts/17052025/" class="institution-card">
-    <img src="/images/logos/UoN.png" alt="SJTU">
-    <div class="institution-card-name">Shanghai Jiaotong University</div>
+  <a href="#" class="institution-card">
+    <img src="/images/logos/UoW.png" alt="UoW">
+    <div class="institution-card-name">University of Warwick</div>
   </a>
 
   <a href="/posts/03112024/" class="institution-card">
     <img src="/images/logos/UoB.png" alt="UoB">
     <div class="institution-card-name">University of Birmingham</div>
-  </a>
-
-  <a href="/posts/03042024/" class="institution-card">
-    <img src="/images/logos/UoN.png" alt="UoN">
-    <div class="institution-card-name">University of Nottingham</div>
   </a>
 </div>
 

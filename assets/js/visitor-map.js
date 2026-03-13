@@ -163,18 +163,19 @@
 
   // Get visitor location
   function getLocation(stats) {
-    fetch('https://ipapi.co/json/')
+    fetch('https://ipapi.co/json/?fields=city,country_name')
       .then(res => res.json())
       .then(data => {
         const country = data.country_name || 'Unknown';
-        const city = data.city || 'Unknown';
+        const city = data.city || '';
 
-        // Update location display
+        // Update location display (city-level only, no detailed address)
         const locationEl = document.getElementById('vm-location');
         if (locationEl) {
+          const displayText = city ? `${city}, ${country}` : country;
           locationEl.innerHTML = `
             <i class="fas fa-map-marker-alt"></i>
-            <span>${city}, ${country}</span>
+            <span>${displayText}</span>
           `;
         }
 

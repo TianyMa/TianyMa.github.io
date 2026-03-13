@@ -260,74 +260,154 @@ title: About
     grid-template-columns: 1fr;
   }
 }
+
+[data-mode="dark"] .about-section {
+  background: #1e1e2e;
+}
+
+[data-mode="dark"] .about-section h2 {
+  color: #89b4fa;
+}
+
+[data-mode="dark"] .about-section p,
+[data-mode="dark"] .timeline-item p {
+  color: #bac2de;
+}
+
+[data-mode="dark"] .research-item,
+[data-mode="dark"] .skill-item,
+[data-mode="dark"] .contact-item {
+  background: #181825;
+}
+
+[data-mode="dark"] .research-item h4,
+[data-mode="dark"] .timeline-item h4 {
+  color: #cdd6f4;
+}
+
+[data-mode="dark"] .timeline-item .timeline-meta {
+  color: #9399b2;
+}
+
+[data-mode="dark"] .research-item p {
+  color: #bac2de;
+}
+
+[data-mode="dark"] .contact-item-label {
+  color: #9399b2;
+}
+
+[data-mode="dark"] .contact-item-value {
+  color: #cdd6f4;
+}
+
+[data-mode="dark"] .contact-item i {
+  background: #313244;
+  color: #89b4fa;
+}
+
+[data-mode="dark"] .skill-item {
+  color: #cdd6f4;
+}
+
+[data-mode="dark"] .timeline-item::before {
+  border-color: #1e1e2e;
+}
 </style>
 
 <div class="about-hero">
-  <h1>👋 Hi, I'm Tianyi (Haotian) MA</h1>
-  <p>PhD Researcher | Energy Systems | Data-Driven Optimization</p>
+  <h1>Haotian (Tianyi) MA</h1>
+  <p>Quantitative Researcher | Systems Modelling & Optimisation | Infrastructure & Energy Investments</p>
 </div>
 
 <div class="about-section">
   <h2><i class="fas fa-user"></i> About Me</h2>
   <p style="font-size: 1.05rem; line-height: 1.8; color: #555;">
-    I am a passionate PhD researcher dedicated to accelerating the transition to a sustainable, low-carbon future through data-driven innovation. My work focuses on optimizing multi-electrochemical energy storage systems, combining cutting-edge machine learning techniques with deep domain expertise in energy systems.
+    I am a doctoral researcher in Systems Modelling and Optimisation at University College London. My work develops integrated modelling toolchains connecting electrochemical system dynamics, infrastructure performance constraints, and stochastic operating environments with decision-relevant sustainability metrics.
   </p>
   <p style="font-size: 1.05rem; line-height: 1.8; color: #555; margin-top: 1rem;">
-    Currently based at <strong>University College London (UCL)</strong>, I collaborate with leading researchers worldwide to develop intelligent energy solutions that support the UK's Net Zero initiatives and global climate goals.
+    By combining physics-based system representation, statistical calibration, and scenario-based optimisation, I construct structured analytical frameworks for evaluating infrastructure transitions under deep uncertainty — spanning 10–20 year planning horizons with Monte Carlo simulation and global sensitivity analysis.
   </p>
 </div>
 
 <div class="about-section">
-  <h2><i class="fas fa-lightbulb"></i> Research Focus</h2>
+  <h2><i class="fas fa-lightbulb"></i> Core Competencies</h2>
   <div class="research-grid">
     <div class="research-item">
-      <h4>🔋 Energy Storage Systems</h4>
-      <p>Designing and optimizing multi-electrochemical energy storage solutions for grid resilience and renewable integration</p>
+      <h4>Quantitative Modelling & Systems Analysis</h4>
+      <p>Python (NumPy, Pandas, SciPy), C++, SQL, Linux; optimisation, system simulation, constraint modelling, reproducible research workflows</p>
     </div>
 
     <div class="research-item">
-      <h4>🤖 Machine Learning</h4>
-      <p>Applying advanced ML algorithms for system optimization, performance prediction, and data-driven decision making</p>
+      <h4>Risk, Uncertainty & Scenario Analytics</h4>
+      <p>Monte Carlo, global sensitivity analysis, probabilistic branching, tail-risk quantification, stress testing, portfolio optimisation (convex), equity factor models</p>
     </div>
 
     <div class="research-item">
-      <h4>⚡ PEM Electrolyzers</h4>
-      <p>Multiscale modeling and electrochemical validation of PEM water electrolyzer systems for green hydrogen production</p>
+      <h4>Infrastructure & Climate Investment</h4>
+      <p>Multi-scenario DCF modelling, stochastic input simulation, NPV driver attribution, break-even corridor solving, levelised cost decomposition, policy stress modelling</p>
     </div>
 
     <div class="research-item">
-      <h4>🌍 Climate Policy</h4>
-      <p>Supporting evidence-based climate policy through techno-economic analysis and long-horizon scenario modeling</p>
+      <h4>Electrochemical Systems</h4>
+      <p>PEM electrolyzer modelling, multiscale simulation, degradation mapping, lifecycle cost analysis, experimental validation and loss decomposition</p>
     </div>
   </div>
 </div>
 
 <div class="about-section">
-  <h2><i class="fas fa-graduation-cap"></i> Education & Experience</h2>
+  <h2><i class="fas fa-graduation-cap"></i> Education</h2>
   <div class="timeline">
     <div class="timeline-item">
-      <h4>PhD in Energy Systems</h4>
+      <h4>Ph.D. in Systems Modelling and Optimisation</h4>
       <div class="timeline-meta">
-        <i class="fas fa-university"></i> University College London (UCL) | 2021 - Present
+        <i class="fas fa-university"></i> University College London | 2023 – 2026
       </div>
-      <p>Research Focus: Multi-Electrochemical Energy Storage Optimization for Data Centre Resilience</p>
-      <p style="margin-top: 0.5rem;"><strong>Supervisor:</strong> Prof. Catalina Spataru</p>
+      <p>Integrated modelling toolchains for infrastructure transitions under deep uncertainty; Monte Carlo simulation and global sensitivity analysis across 10–20 year planning horizons.</p>
     </div>
 
     <div class="timeline-item">
-      <h4>Visiting Researcher</h4>
+      <h4>M.Res. in Systems and Control — Distinction</h4>
       <div class="timeline-meta">
-        <i class="fas fa-building"></i> University College London | 2024
+        <i class="fas fa-university"></i> University of Warwick | 2021 – 2023
       </div>
-      <p>Collaborative research on PEM-integrated hybrid energy storage systems and climate policy integration</p>
+      <p>GPA: 4.0/4.0 | Chancellor's International Award</p>
     </div>
 
     <div class="timeline-item">
-      <h4>Master's Degree</h4>
+      <h4>M.Sc. in Sustainable Energy Engineering</h4>
       <div class="timeline-meta">
-        <i class="fas fa-university"></i> Southeast University | 2018 - 2021
+        <i class="fas fa-university"></i> University of Nottingham | 2019 – 2021
       </div>
-      <p>School of Chemical Engineering - Focus on Energy Systems and Optimization</p>
+    </div>
+
+    <div class="timeline-item">
+      <h4>B.Eng. in Energy and Power Engineering</h4>
+      <div class="timeline-meta">
+        <i class="fas fa-university"></i> Southeast University | 2015 – 2019
+      </div>
+      <p>Outstanding Graduate (Top 5%)</p>
+    </div>
+  </div>
+</div>
+
+<div class="about-section">
+  <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h4>Quantitative Researcher — Infrastructure & Energy Investments</h4>
+      <div class="timeline-meta">
+        <i class="fas fa-building"></i> Huawei European Research Institute, Munich | May 2023 – May 2025
+      </div>
+      <p>Developed 20-year DCF valuation models for energy-intensive real assets (Tier III data centre, 12.895 MW baseline IT load). Implemented Monte Carlo frameworks for return distribution and tail exposure analysis. Structured capital allocation across hybrid infrastructure portfolios (PV, storage, hydrogen) under CAPEX-, total-cost-, and emissions-oriented objectives. Achieved 50% CO2 reduction through bounded valuation corridors.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h4>Quantitative Analyst — Early-Stage Energy Infrastructure Screening</h4>
+      <div class="timeline-meta">
+        <i class="fas fa-building"></i> Global Energy Interconnection Research Institute, Berlin | Oct 2021 – Apr 2023
+      </div>
+      <p>Defined techno-economic inflection thresholds for PEM infrastructure during rapid scale-up (CAGR 52%). Built calibrated multiscale modelling architecture (polarisation RMSE < 15 mV, lifetime drift ±3%). Quantified degradation uncertainty into P10/P50/P90 investment ranges via Monte Carlo ensembles (>300 runs per case).</p>
     </div>
   </div>
 </div>
@@ -341,48 +421,68 @@ title: About
     </div>
 
     <div class="skill-item">
-      <i class="fas fa-brain"></i>
-      <div class="skill-item-name">Machine Learning</div>
-    </div>
-
-    <div class="skill-item">
-      <i class="fas fa-chart-line"></i>
-      <div class="skill-item-name">Optimization</div>
+      <i class="fas fa-code"></i>
+      <div class="skill-item-name">C++</div>
     </div>
 
     <div class="skill-item">
       <i class="fas fa-database"></i>
-      <div class="skill-item-name">Data Analysis</div>
+      <div class="skill-item-name">SQL</div>
     </div>
 
     <div class="skill-item">
-      <i class="fas fa-bolt"></i>
-      <div class="skill-item-name">Energy Systems</div>
+      <i class="fas fa-chart-line"></i>
+      <div class="skill-item-name">Optimisation</div>
+    </div>
+
+    <div class="skill-item">
+      <i class="fas fa-dice"></i>
+      <div class="skill-item-name">Monte Carlo</div>
+    </div>
+
+    <div class="skill-item">
+      <i class="fab fa-linux"></i>
+      <div class="skill-item-name">Linux</div>
+    </div>
+
+    <div class="skill-item">
+      <i class="fab fa-git-alt"></i>
+      <div class="skill-item-name">Git</div>
     </div>
 
     <div class="skill-item">
       <i class="fas fa-project-diagram"></i>
-      <div class="skill-item-name">System Modeling</div>
+      <div class="skill-item-name">System Modelling</div>
     </div>
+  </div>
+</div>
+
+<div class="about-section">
+  <h2><i class="fas fa-file-alt"></i> Selected Publications</h2>
+  <div style="line-height: 1.8; color: #555;">
+    <p><strong>[1]</strong> Hydrogen cost structure & policy exposure — <em>International Journal of Greenhouse Gas Control</em>, 2024.</p>
+    <p><strong>[2]</strong> Battery durability & cost transmission — <em>IEEE Smart Power & Internet Energy Systems</em>, 2025.</p>
+    <p><strong>[3]</strong> Infrastructure resilience valuation under stress — <em>IET Powering Net Zero</em>, 2025.</p>
+    <p style="margin-top: 1rem;"><a href="https://scholar.google.com/citations?user=xWDB92cAAAAJ" target="_blank">View all on Google Scholar →</a></p>
   </div>
 </div>
 
 <div class="about-section">
   <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
   <div class="contact-grid">
-    <a href="mailto:Tianyi-ma@outlook.com" class="contact-item">
+    <a href="mailto:Haotian-MA@outlook.com" class="contact-item">
       <i class="fas fa-envelope"></i>
       <div class="contact-item-info">
         <div class="contact-item-label">Email</div>
-        <div class="contact-item-value">Tianyi-ma@outlook.com</div>
+        <div class="contact-item-value">Haotian-MA@outlook.com</div>
       </div>
     </a>
 
-    <a href="https://github.com/TianyMa" target="_blank" class="contact-item">
-      <i class="fab fa-github"></i>
+    <a href="https://profiles.ucl.ac.uk/101734-haotiantianyi-ma" target="_blank" class="contact-item">
+      <i class="fas fa-university"></i>
       <div class="contact-item-info">
-        <div class="contact-item-label">GitHub</div>
-        <div class="contact-item-value">@TianyMa</div>
+        <div class="contact-item-label">UCL Profile</div>
+        <div class="contact-item-value">UCL Researcher</div>
       </div>
     </a>
 
@@ -390,23 +490,7 @@ title: About
       <i class="fab fa-linkedin"></i>
       <div class="contact-item-info">
         <div class="contact-item-label">LinkedIn</div>
-        <div class="contact-item-value">TYMa</div>
-      </div>
-    </a>
-
-    <a href="https://twitter.com/TianyiM57651" target="_blank" class="contact-item">
-      <i class="fab fa-twitter"></i>
-      <div class="contact-item-info">
-        <div class="contact-item-label">Twitter</div>
-        <div class="contact-item-value">@TianyiM57651</div>
-      </div>
-    </a>
-
-    <a href="https://www.instagram.com/kirinfly/" target="_blank" class="contact-item">
-      <i class="fab fa-instagram"></i>
-      <div class="contact-item-info">
-        <div class="contact-item-label">Instagram</div>
-        <div class="contact-item-value">@kirinfly</div>
+        <div class="contact-item-value">Haotian MA</div>
       </div>
     </a>
 
@@ -417,34 +501,32 @@ title: About
         <div class="contact-item-value">Publications</div>
       </div>
     </a>
+
+    <a href="https://github.com/TSdreamer" target="_blank" class="contact-item">
+      <i class="fab fa-github"></i>
+      <div class="contact-item-info">
+        <div class="contact-item-label">GitHub</div>
+        <div class="contact-item-value">@TSdreamer</div>
+      </div>
+    </a>
+
+    <a href="https://tianyma.github.io" target="_blank" class="contact-item">
+      <i class="fas fa-globe"></i>
+      <div class="contact-item-info">
+        <div class="contact-item-label">Homepage</div>
+        <div class="contact-item-value">tianyma.github.io</div>
+      </div>
+    </a>
   </div>
 </div>
 
 <div class="quote-box">
-  <p>"Using data-driven methods to accelerate the arrival of a sustainable future"</p>
+  <p>"Building structured analytical frameworks to evaluate infrastructure transitions under deep uncertainty"</p>
 </div>
-
-<div class="about-section">
-  <h2><i class="fas fa-globe"></i> About This Website</h2>
-  <p style="line-height: 1.8; color: #555;">
-    This website serves as my digital research lab and personal journal, where I document my journey toward a sustainable energy future. Here you'll find:
-  </p>
-  <ul style="line-height: 2; color: #555; margin-top: 1rem;">
-    <li><strong>Weekly Research Updates</strong> - Progress reports and insights from my PhD journey</li>
-    <li><strong>Technical Deep Dives</strong> - Detailed explorations of energy systems and optimization techniques</li>
-    <li><strong>Project Showcases</strong> - Demonstrations of research projects and experiments</li>
-    <li><strong>Personal Reflections</strong> - Thoughts on sustainability, technology, and the future</li>
-  </ul>
-  <p style="line-height: 1.8; color: #555; margin-top: 1rem;">
-    Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> using the <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank">Chirpy</a> theme, enhanced with custom features including interactive visualizations, real-time search, and visitor analytics.
-  </p>
-</div>
-
----
 
 <div style="text-align: center; padding: 2rem 0; color: #666;">
-  <p style="margin: 0;">Thank you for visiting! Feel free to explore my research and reach out if you'd like to collaborate.</p>
-  <p style="margin-top: 1rem; font-size: 0.9rem;">
-    <i class="fas fa-heart" style="color: #e74c3c;"></i> Made with passion for sustainable energy
+  <p style="margin: 0;">London, UK</p>
+  <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+    Thank you for visiting. Feel free to explore my research and reach out for collaboration.
   </p>
 </div>
