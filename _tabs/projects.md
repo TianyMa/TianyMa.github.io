@@ -123,6 +123,8 @@ title: Projects
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -157,6 +159,9 @@ title: Projects
 
 .project-card-body {
   padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card-description {
@@ -185,6 +190,7 @@ title: Projects
   padding: 0 1.5rem 1.5rem;
   display: flex;
   gap: 1rem;
+  margin-top: auto;
 }
 
 .project-link {
