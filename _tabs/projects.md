@@ -328,18 +328,7 @@ title: Projects
   <p>Documenting my journey in sustainable energy systems, data-driven optimization, and climate-resilient infrastructure</p>
 </div>
 
-## 🏛️ Institutional Collaborations
 
-<div class="institutions-grid" markdown="0">
-  <a href="/posts/03182024/" class="institution-card"><img src="/images/logos/UCL_logo.png" alt="UCL"><div class="institution-card-name">University College London</div></a>
-  <a href="/posts/03242024/" class="institution-card"><img src="/images/logos/mit.webp" alt="MIT"><div class="institution-card-name">MIT</div></a>
-  <a href="#" class="institution-card"><img src="/images/logos/HW.png" alt="Huawei"><div class="institution-card-name">Huawei Research</div></a>
-  <a href="#" class="institution-card"><img src="/images/logos/GEIRI.png" alt="GEIRI"><div class="institution-card-name">GEIRI Europe</div></a>
-  <a href="/posts/17052025/" class="institution-card"><img src="/images/logos/SEU.png" alt="SEU"><div class="institution-card-name">Southeast University</div></a>
-  <a href="/posts/03042024/" class="institution-card"><img src="/images/logos/UoN.png" alt="UoN"><div class="institution-card-name">University of Nottingham</div></a>
-  <a href="#" class="institution-card"><img src="/images/logos/UoW.png" alt="UoW"><div class="institution-card-name">University of Warwick</div></a>
-  <a href="/posts/03112024/" class="institution-card"><img src="/images/logos/UoB.png" alt="UoB"><div class="institution-card-name">University of Birmingham</div></a>
-</div>
 
 ---
 
