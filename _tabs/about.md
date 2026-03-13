@@ -513,11 +513,11 @@ title: About
       </div>
     </a>
 
-    <a href="https://github.com/TSdreamer" target="_blank" class="contact-item">
+    <a href="https://github.com/TianyMa" target="_blank" class="contact-item">
       <i class="fab fa-github"></i>
       <div class="contact-item-info">
         <div class="contact-item-label">GitHub</div>
-        <div class="contact-item-value">@TSdreamer</div>
+        <div class="contact-item-value">@TianyMa</div>
       </div>
     </a>
 
