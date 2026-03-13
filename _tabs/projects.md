@@ -132,11 +132,6 @@ title: Projects
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-.project-card-image {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
 
 .project-card-header {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -365,7 +360,6 @@ title: Projects
 
 <div class="projects-grid" markdown="0">
   <div class="project-card">
-    <img src="/images/UCL-2024/multi-electrochemical-energy-storage.webp" alt="Multi-Electrochemical Energy Storage" class="project-card-image">
     <div class="project-card-header">
       <h3 class="project-card-title">Multi-Electrochemical Energy Storage Optimization <span class="project-status status-active">Active</span></h3>
       <div class="project-card-meta">
@@ -387,7 +381,6 @@ title: Projects
     </div>
   </div>
   <div class="project-card">
-    <img src="/images/UCL-2024/pemwe-system-prediction-framework.png" alt="PEM Electrolyzer Multiscale Modeling" class="project-card-image">
     <div class="project-card-header">
       <h3 class="project-card-title">PEM Electrolyzer Multiscale Modeling <span class="project-status status-active">Active</span></h3>
       <div class="project-card-meta">
@@ -408,7 +401,6 @@ title: Projects
     </div>
   </div>
   <div class="project-card">
-    <img src="/images/UCL-2024/sjtu-ucl-joint-framework.png" alt="UCL-SJTU Solar-Thermal PEM Platform" class="project-card-image">
     <div class="project-card-header">
       <h3 class="project-card-title">Solar-Thermal PEM Hydrogen Platform <span class="project-status status-active">Active</span></h3>
       <div class="project-card-meta">
@@ -429,7 +421,6 @@ title: Projects
     </div>
   </div>
   <div class="project-card">
-    <img src="/images/2025/tsinghua-university-collaboration.webp" alt="UCL-Tsinghua Collaboration" class="project-card-image">
     <div class="project-card-header">
       <h3 class="project-card-title">Energy Storage & Governance Research <span class="project-status status-active">Active</span></h3>
       <div class="project-card-meta">
@@ -450,7 +441,6 @@ title: Projects
     </div>
   </div>
   <div class="project-card">
-    <img src="/images/2025/cambridge-university-visit.jpg" alt="CATL Top-Talent Programme" class="project-card-image">
     <div class="project-card-header">
       <h3 class="project-card-title">CATL Top-Talent Programme <span class="project-status status-completed">2025</span></h3>
       <div class="project-card-meta">
@@ -471,7 +461,6 @@ title: Projects
     </div>
   </div>
   <div class="project-card">
-    <img src="/images/2025/ieee-conference-datacentre.png" alt="IEEE & IET Conference" class="project-card-image">
     <div class="project-card-header">
       <h3 class="project-card-title">IET & SPIES 2025 Conferences <span class="project-status status-completed">2025</span></h3>
       <div class="project-card-meta">
@@ -492,7 +481,6 @@ title: Projects
     </div>
   </div>
   <div class="project-card">
-    <img src="/images/UCL-2024/climate-policy-framework.png" alt="Climate Policy Integration" class="project-card-image">
     <div class="project-card-header">
       <h3 class="project-card-title">Climate Policy Integration</h3>
       <div class="project-card-meta">
