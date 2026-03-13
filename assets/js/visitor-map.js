@@ -163,7 +163,7 @@
 
   // Get visitor location
   function getLocation(stats) {
-    fetch('https://ipapi.co/json/?fields=city,country_name')
+    fetch('https://ipapi.co/json/')
       .then(res => res.json())
       .then(data => {
         const country = data.country_name || 'Unknown';
