@@ -118,6 +118,12 @@ title: Projects
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
+.project-card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
 .project-card-header {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -243,6 +249,48 @@ title: Projects
     grid-template-columns: 1fr;
   }
 }
+
+[data-mode="dark"] .institution-card,
+[data-mode="dark"] .focus-area-card,
+[data-mode="dark"] .project-card,
+[data-mode="dark"] .methodology-item {
+  background: #1e1e2e;
+  color: #cdd6f4;
+}
+
+[data-mode="dark"] .institution-card-name,
+[data-mode="dark"] .project-card-description,
+[data-mode="dark"] .methodology-item p {
+  color: #bac2de;
+}
+
+[data-mode="dark"] .methodology-section {
+  background: #181825;
+}
+
+[data-mode="dark"] .project-tag {
+  background: #313244;
+  color: #89b4fa;
+}
+
+.project-status {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.status-active {
+  background: rgba(255,255,255,0.2);
+  color: #a6e3a1;
+}
+
+.status-completed {
+  background: rgba(255,255,255,0.2);
+  color: #f9e2af;
+}
 </style>
 
 <div class="projects-hero">
@@ -263,6 +311,21 @@ title: Projects
     <div class="institution-card-name">University College London</div>
   </a>
 
+  <a href="/posts/17052025/" class="institution-card">
+    <img src="/images/logos/SEU.png" alt="SEU">
+    <div class="institution-card-name">Southeast University</div>
+  </a>
+
+  <a href="/posts/18052025/" class="institution-card">
+    <img src="/images/logos/UoB.png" alt="Tsinghua">
+    <div class="institution-card-name">Tsinghua University</div>
+  </a>
+
+  <a href="/posts/17052025/" class="institution-card">
+    <img src="/images/logos/UoN.png" alt="SJTU">
+    <div class="institution-card-name">Shanghai Jiaotong University</div>
+  </a>
+
   <a href="/posts/03112024/" class="institution-card">
     <img src="/images/logos/UoB.png" alt="UoB">
     <div class="institution-card-name">University of Birmingham</div>
@@ -271,11 +334,6 @@ title: Projects
   <a href="/posts/03042024/" class="institution-card">
     <img src="/images/logos/UoN.png" alt="UoN">
     <div class="institution-card-name">University of Nottingham</div>
-  </a>
-
-  <a href="/posts/02262024/" class="institution-card">
-    <img src="/images/logos/SEU.png" alt="SEU">
-    <div class="institution-card-name">Southeast University</div>
   </a>
 </div>
 
@@ -311,8 +369,9 @@ title: Projects
 
 <div class="projects-grid">
   <div class="project-card">
+    <img src="/images/UCL-2024/multi-electrochemical-energy-storage.webp" alt="Multi-Electrochemical Energy Storage" class="project-card-image">
     <div class="project-card-header">
-      <h3 class="project-card-title">Multi-Electrochemical Energy Storage Optimization</h3>
+      <h3 class="project-card-title">Multi-Electrochemical Energy Storage Optimization <span class="project-status status-active">Active</span></h3>
       <div class="project-card-meta">
         <span><i class="fas fa-university"></i> UCL</span>
         <span><i class="fas fa-calendar"></i> 2024-2025</span>
@@ -320,13 +379,13 @@ title: Projects
     </div>
     <div class="project-card-body">
       <p class="project-card-description">
-        System modeling and sizing optimization of PEM-integrated hybrid energy storage for data centre resilience, incorporating uncertainty quantification and long-term scenario analysis.
+        MILP-based sizing optimization of PEM-integrated hybrid energy storage for data centre resilience, with Monte Carlo uncertainty quantification and multi-decade scenario analysis across UK climate zones.
       </p>
       <div class="project-card-tags">
         <span class="project-tag">Energy Storage</span>
-        <span class="project-tag">Optimization</span>
+        <span class="project-tag">MILP</span>
         <span class="project-tag">PEM</span>
-        <span class="project-tag">Resilience</span>
+        <span class="project-tag">Monte Carlo</span>
       </div>
     </div>
     <div class="project-card-footer">
@@ -337,8 +396,9 @@ title: Projects
   </div>
 
   <div class="project-card">
+    <img src="/images/UCL-2024/pemwe-system-prediction-framework.png" alt="PEM Electrolyzer Multiscale Modeling" class="project-card-image">
     <div class="project-card-header">
-      <h3 class="project-card-title">PEM Electrolyzer Multiscale Modeling</h3>
+      <h3 class="project-card-title">PEM Electrolyzer Multiscale Modeling <span class="project-status status-active">Active</span></h3>
       <div class="project-card-meta">
         <span><i class="fas fa-university"></i> SEU & UCL</span>
         <span><i class="fas fa-calendar"></i> 2024-2025</span>
@@ -346,16 +406,146 @@ title: Projects
     </div>
     <div class="project-card-body">
       <p class="project-card-description">
-        Multiscale modeling and electrochemical validation of PEM electrolyzer-coupled hybrid energy storage systems using data augmentation and deep learning techniques.
+        Multiscale electrochemical modeling and experimental validation of PEM electrolyzers using GAN-based data augmentation and deep learning for MEA performance prediction.
       </p>
       <div class="project-card-tags">
         <span class="project-tag">PEM Electrolyzer</span>
         <span class="project-tag">Deep Learning</span>
-        <span class="project-tag">Validation</span>
+        <span class="project-tag">GAN</span>
       </div>
     </div>
     <div class="project-card-footer">
       <a href="/posts/17052025/" class="project-link">
+        <i class="fas fa-book"></i> Read More
+      </a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="/images/UCL-2024/sjtu-ucl-joint-framework.png" alt="UCL-SJTU Solar-Thermal PEM Platform" class="project-card-image">
+    <div class="project-card-header">
+      <h3 class="project-card-title">Solar-Thermal PEM Hydrogen Platform <span class="project-status status-active">Active</span></h3>
+      <div class="project-card-meta">
+        <span><i class="fas fa-university"></i> UCL & SJTU</span>
+        <span><i class="fas fa-calendar"></i> 2025-2026</span>
+      </div>
+    </div>
+    <div class="project-card-body">
+      <p class="project-card-description">
+        UCL–SJTU joint platform integrating solar thermal and PEM electrolysis, combining electrochemical testbed development with PVT-heat pump system simulation for green hydrogen production.
+      </p>
+      <div class="project-card-tags">
+        <span class="project-tag">Solar-Thermal</span>
+        <span class="project-tag">PEM Electrolysis</span>
+        <span class="project-tag">Joint Funding</span>
+      </div>
+    </div>
+    <div class="project-card-footer">
+      <a href="/posts/17052025/" class="project-link">
+        <i class="fas fa-book"></i> Read More
+      </a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="/images/2025/tsinghua-university-collaboration.webp" alt="UCL-Tsinghua Collaboration" class="project-card-image">
+    <div class="project-card-header">
+      <h3 class="project-card-title">Energy Storage & Governance Research <span class="project-status status-active">Active</span></h3>
+      <div class="project-card-meta">
+        <span><i class="fas fa-university"></i> UCL & Tsinghua</span>
+        <span><i class="fas fa-calendar"></i> 2025</span>
+      </div>
+    </div>
+    <div class="project-card-body">
+      <p class="project-card-description">
+        Collaboration with Tsinghua University on energy storage cost-benefit analysis, power-system operation optimization, and energy governance under market and policy constraints.
+      </p>
+      <div class="project-card-tags">
+        <span class="project-tag">Energy Governance</span>
+        <span class="project-tag">Power Systems</span>
+        <span class="project-tag">Optimisation</span>
+      </div>
+    </div>
+    <div class="project-card-footer">
+      <a href="/posts/18052025/" class="project-link">
+        <i class="fas fa-book"></i> Read More
+      </a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="/images/2025/cambridge-university-visit.jpg" alt="CATL Top-Talent Programme" class="project-card-image">
+    <div class="project-card-header">
+      <h3 class="project-card-title">CATL Top-Talent Programme <span class="project-status status-completed">2025</span></h3>
+      <div class="project-card-meta">
+        <span><i class="fas fa-university"></i> Cambridge & CATL</span>
+        <span><i class="fas fa-calendar"></i> 2025</span>
+      </div>
+    </div>
+    <div class="project-card-body">
+      <p class="project-card-description">
+        Academic exchange at Cambridge on battery management systems, energy-intelligence architectures, and integration of physics-based electrochemical models with AI-enhanced methods.
+      </p>
+      <div class="project-card-tags">
+        <span class="project-tag">Battery Technology</span>
+        <span class="project-tag">AI for Energy</span>
+        <span class="project-tag">Electrochemistry</span>
+      </div>
+    </div>
+    <div class="project-card-footer">
+      <a href="/posts/19112025/" class="project-link">
+        <i class="fas fa-book"></i> Read More
+      </a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="/images/2025/ieee-conference-datacentre.png" alt="IEEE & IET Conference" class="project-card-image">
+    <div class="project-card-header">
+      <h3 class="project-card-title">IET & SPIES 2025 Conferences <span class="project-status status-completed">2025</span></h3>
+      <div class="project-card-meta">
+        <span><i class="fas fa-university"></i> IET & IEEE</span>
+        <span><i class="fas fa-calendar"></i> 2025</span>
+      </div>
+    </div>
+    <div class="project-card-body">
+      <p class="project-card-description">
+        Presentations on hybrid energy storage for data-centre resilience (IET) and electrochemical modeling of PEM water electrolyzers for loss decomposition (SPIES 2025, Shanghai).
+      </p>
+      <div class="project-card-tags">
+        <span class="project-tag">Data Centres</span>
+        <span class="project-tag">PEM Electrolysis</span>
+        <span class="project-tag">Conference</span>
+      </div>
+    </div>
+    <div class="project-card-footer">
+      <a href="/posts/17082025/" class="project-link">
+        <i class="fas fa-book"></i> Read More
+      </a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="/images/UCL-2024/climate-policy-framework.png" alt="Climate Policy Integration" class="project-card-image">
+    <div class="project-card-header">
+      <h3 class="project-card-title">Climate Policy Integration</h3>
+      <div class="project-card-meta">
+        <span><i class="fas fa-university"></i> UCL</span>
+        <span><i class="fas fa-calendar"></i> 2024</span>
+      </div>
+    </div>
+    <div class="project-card-body">
+      <p class="project-card-description">
+        Framework for integrating climate policy considerations into energy system optimization, supporting UK Net Zero initiatives and low-carbon energy transition.
+      </p>
+      <div class="project-card-tags">
+        <span class="project-tag">Climate Policy</span>
+        <span class="project-tag">Net Zero</span>
+        <span class="project-tag">Framework</span>
+      </div>
+    </div>
+    <div class="project-card-footer">
+      <a href="/posts/10142024/" class="project-link">
         <i class="fas fa-book"></i> Read More
       </a>
     </div>
@@ -382,32 +572,6 @@ title: Projects
     <div class="project-card-footer">
       <a href="https://scholar.google.com/citations?user=xWDB92cAAAAJ" target="_blank" class="project-link">
         <i class="fas fa-external-link-alt"></i> Publication
-      </a>
-    </div>
-  </div>
-
-  <div class="project-card">
-    <div class="project-card-header">
-      <h3 class="project-card-title">Climate Policy Integration</h3>
-      <div class="project-card-meta">
-        <span><i class="fas fa-university"></i> UCL</span>
-        <span class="project-card-meta">
-        <span><i class="fas fa-calendar"></i> 2024</span>
-      </div>
-    </div>
-    <div class="project-card-body">
-      <p class="project-card-description">
-        Framework development for integrating climate policy considerations into energy system optimization, supporting UK Net Zero initiatives.
-      </p>
-      <div class="project-card-tags">
-        <span class="project-tag">Climate Policy</span>
-        <span class="project-tag">Net Zero</span>
-        <span class="project-tag">Framework</span>
-      </div>
-    </div>
-    <div class="project-card-footer">
-      <a href="/posts/10142024/" class="project-link">
-        <i class="fas fa-book"></i> Read More
       </a>
     </div>
   </div>
@@ -448,6 +612,16 @@ title: Projects
     <div class="methodology-item">
       <h4>📈 Sensitivity Analysis</h4>
       <p>Systematic parameter variation to identify critical factors and non-linear responses</p>
+    </div>
+
+    <div class="methodology-item">
+      <h4>🔬 Electrochemical Modeling</h4>
+      <p>Physics-based PEM electrolyzer models with experimental validation and loss decomposition analysis</p>
+    </div>
+
+    <div class="methodology-item">
+      <h4>🌡️ Thermal-Electrical Coupling</h4>
+      <p>Solar-thermal integration with electrochemical systems for enhanced hydrogen production efficiency</p>
     </div>
   </div>
 </div>

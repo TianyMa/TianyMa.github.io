@@ -8,7 +8,7 @@
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  z-index: 999;
+  z-index: 1050;
   overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   animation: slideInUp 0.5s ease-out;
@@ -246,49 +246,47 @@
   }
 }
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  .visitor-map-widget {
-    background: #1e1e1e;
-    color: #fff;
-  }
+/* Dark mode - Chirpy theme uses data-mode attribute */
+[data-mode="dark"] .visitor-map-widget {
+  background: #1e1e2e;
+  color: #cdd6f4;
+}
 
-  .visitor-stat {
-    background: rgba(255, 255, 255, 0.05);
-  }
+[data-mode="dark"] .visitor-stat {
+  background: rgba(255, 255, 255, 0.05);
+}
 
-  .visitor-stat-value {
-    color: #fff;
-  }
+[data-mode="dark"] .visitor-stat-value {
+  color: #cdd6f4;
+}
 
-  .visitor-stat-label {
-    color: #999;
-  }
+[data-mode="dark"] .visitor-stat-label {
+  color: #9399b2;
+}
 
-  .visitor-map-visual {
-    background: rgba(255, 255, 255, 0.05);
-  }
+[data-mode="dark"] .visitor-map-visual {
+  background: rgba(255, 255, 255, 0.05);
+}
 
-  .visitor-location {
-    background: rgba(102, 126, 234, 0.2);
-    color: #fff;
-  }
+[data-mode="dark"] .visitor-location {
+  background: rgba(102, 126, 234, 0.2);
+  color: #cdd6f4;
+}
 
-  .visitor-country-name {
-    color: #fff;
-  }
+[data-mode="dark"] .visitor-country-name {
+  color: #cdd6f4;
+}
 
-  .visitor-country-count {
-    color: #999;
-  }
+[data-mode="dark"] .visitor-country-count {
+  color: #9399b2;
+}
 
-  .visitor-country-bar {
-    background: rgba(255, 255, 255, 0.1);
-  }
+[data-mode="dark"] .visitor-country-bar {
+  background: rgba(255, 255, 255, 0.1);
+}
 
-  .visitor-countries-title {
-    color: #fff;
-  }
+[data-mode="dark"] .visitor-countries-title {
+  color: #cdd6f4;
 }
 
 /* Hover effect */
