@@ -332,17 +332,25 @@ Based on my Google Scholar profile - Real publication data from 2021 to present.
 
 ## 🏛️ Institutional Affiliations
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
   <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); text-align: center;">
     <h4 style="color: #2196F3; margin-top: 0;">University College London</h4>
-    <p style="color: #666; margin: 0;">Current Affiliation</p>
-    <p style="color: #999; font-size: 0.85rem; margin-top: 0.5rem;">ucl.ac.uk</p>
+    <p style="color: #666; margin: 0;">Ph.D. in Systems Modelling and Optimisation</p>
+  </div>
+
+  <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+    <h4 style="color: #9C27B0; margin-top: 0;">University of Warwick</h4>
+    <p style="color: #666; margin: 0;">M.Res. in Systems and Control — Distinction</p>
+  </div>
+
+  <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+    <h4 style="color: #FF9800; margin-top: 0;">University of Nottingham</h4>
+    <p style="color: #666; margin: 0;">M.Sc. in Sustainable Energy Engineering</p>
   </div>
 
   <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); text-align: center;">
     <h4 style="color: #4CAF50; margin-top: 0;">Southeast University</h4>
-    <p style="color: #666; margin: 0;">PhD Candidate</p>
-    <p style="color: #999; font-size: 0.85rem; margin-top: 0.5rem;">School of Chemical Engineering</p>
+    <p style="color: #666; margin: 0;">B.Eng. in Energy and Power Engineering</p>
   </div>
 </div>
 
