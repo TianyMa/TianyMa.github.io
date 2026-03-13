@@ -29,6 +29,14 @@ title: Projects
   margin: 0 auto;
 }
 
+/* ===== KEY FIX: hide stray <p> / <br> injected by Markdown inside grids ===== */
+.institutions-grid > :not(a),
+.focus-areas > :not(.focus-area-card),
+.projects-grid > :not(.project-card),
+.methodology-list > :not(.methodology-item) {
+  display: none !important;
+}
+
 .institutions-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -45,6 +53,10 @@ title: Projects
   transition: all 0.3s ease;
   text-decoration: none;
   color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .institution-card:hover {
@@ -318,68 +330,34 @@ title: Projects
 
 ## 🏛️ Institutional Collaborations
 
-<div class="institutions-grid">
-  <a href="/posts/03182024/" class="institution-card">
-    <img src="/images/logos/UCL_logo.png" alt="UCL">
-    <div class="institution-card-name">University College London</div>
-  </a>
-
-  <a href="/posts/03242024/" class="institution-card">
-    <img src="/images/logos/mit.webp" alt="MIT">
-    <div class="institution-card-name">MIT</div>
-  </a>
-
-  <a href="#" class="institution-card">
-    <img src="/images/logos/HW.png" alt="Huawei">
-    <div class="institution-card-name">Huawei Research</div>
-  </a>
-
-  <a href="#" class="institution-card">
-    <img src="/images/logos/GEIRI.png" alt="GEIRI">
-    <div class="institution-card-name">GEIRI Europe</div>
-  </a>
-
-  <a href="/posts/17052025/" class="institution-card">
-    <img src="/images/logos/SEU.png" alt="SEU">
-    <div class="institution-card-name">Southeast University</div>
-  </a>
-
-  <a href="/posts/03042024/" class="institution-card">
-    <img src="/images/logos/UoN.png" alt="UoN">
-    <div class="institution-card-name">University of Nottingham</div>
-  </a>
-
-  <a href="#" class="institution-card">
-    <img src="/images/logos/UoW.png" alt="UoW">
-    <div class="institution-card-name">University of Warwick</div>
-  </a>
-
-  <a href="/posts/03112024/" class="institution-card">
-    <img src="/images/logos/UoB.png" alt="UoB">
-    <div class="institution-card-name">University of Birmingham</div>
-  </a>
+<div class="institutions-grid" markdown="0">
+  <a href="/posts/03182024/" class="institution-card"><img src="/images/logos/UCL_logo.png" alt="UCL"><div class="institution-card-name">University College London</div></a>
+  <a href="/posts/03242024/" class="institution-card"><img src="/images/logos/mit.webp" alt="MIT"><div class="institution-card-name">MIT</div></a>
+  <a href="#" class="institution-card"><img src="/images/logos/HW.png" alt="Huawei"><div class="institution-card-name">Huawei Research</div></a>
+  <a href="#" class="institution-card"><img src="/images/logos/GEIRI.png" alt="GEIRI"><div class="institution-card-name">GEIRI Europe</div></a>
+  <a href="/posts/17052025/" class="institution-card"><img src="/images/logos/SEU.png" alt="SEU"><div class="institution-card-name">Southeast University</div></a>
+  <a href="/posts/03042024/" class="institution-card"><img src="/images/logos/UoN.png" alt="UoN"><div class="institution-card-name">University of Nottingham</div></a>
+  <a href="#" class="institution-card"><img src="/images/logos/UoW.png" alt="UoW"><div class="institution-card-name">University of Warwick</div></a>
+  <a href="/posts/03112024/" class="institution-card"><img src="/images/logos/UoB.png" alt="UoB"><div class="institution-card-name">University of Birmingham</div></a>
 </div>
 
 ---
 
 ## 🎯 Research Focus Areas
 
-<div class="focus-areas">
+<div class="focus-areas" markdown="0">
   <div class="focus-area-card">
     <h3><i class="fas fa-chart-line"></i> Long-Horizon Modeling</h3>
     <p>Building quantitative models that examine how demand growth, price dynamics, and policy assumptions propagate through energy-intensive systems over multi-decade timescales.</p>
   </div>
-
   <div class="focus-area-card">
     <h3><i class="fas fa-dice"></i> Uncertainty Analysis</h3>
     <p>Using structured scenario design and Monte Carlo sampling to map dominant drivers, identify non-linear responses, and quantify downside exposure and tail risk.</p>
   </div>
-
   <div class="focus-area-card">
     <h3><i class="fas fa-project-diagram"></i> System Architecture</h3>
     <p>Representing interdependent components (supply → conversion → storage → demand) and the constraints that determine feasible operations and long-term performance.</p>
   </div>
-
   <div class="focus-area-card">
     <h3><i class="fas fa-bullseye"></i> Decision Optimization</h3>
     <p>Organizing models to produce decision-relevant outputs including comparisons, robustness rankings, and constraint binding points for strategic planning.</p>
@@ -390,7 +368,7 @@ title: Projects
 
 ## 📚 Featured Projects
 
-<div class="projects-grid">
+<div class="projects-grid" markdown="0">
   <div class="project-card">
     <img src="/images/UCL-2024/multi-electrochemical-energy-storage.webp" alt="Multi-Electrochemical Energy Storage" class="project-card-image">
     <div class="project-card-header">
@@ -401,9 +379,7 @@ title: Projects
       </div>
     </div>
     <div class="project-card-body">
-      <p class="project-card-description">
-        MILP-based sizing optimization of PEM-integrated hybrid energy storage for data centre resilience, with Monte Carlo uncertainty quantification and multi-decade scenario analysis across UK climate zones.
-      </p>
+      <p class="project-card-description">MILP-based sizing optimization of PEM-integrated hybrid energy storage for data centre resilience, with Monte Carlo uncertainty quantification and multi-decade scenario analysis across UK climate zones.</p>
       <div class="project-card-tags">
         <span class="project-tag">Energy Storage</span>
         <span class="project-tag">MILP</span>
@@ -412,12 +388,9 @@ title: Projects
       </div>
     </div>
     <div class="project-card-footer">
-      <a href="/posts/11102024/" class="project-link">
-        <i class="fas fa-book"></i> Read More
-      </a>
+      <a href="/posts/11102024/" class="project-link"><i class="fas fa-book"></i> Read More</a>
     </div>
   </div>
-
   <div class="project-card">
     <img src="/images/UCL-2024/pemwe-system-prediction-framework.png" alt="PEM Electrolyzer Multiscale Modeling" class="project-card-image">
     <div class="project-card-header">
@@ -428,9 +401,7 @@ title: Projects
       </div>
     </div>
     <div class="project-card-body">
-      <p class="project-card-description">
-        Multiscale electrochemical modeling and experimental validation of PEM electrolyzers using GAN-based data augmentation and deep learning for MEA performance prediction.
-      </p>
+      <p class="project-card-description">Multiscale electrochemical modeling and experimental validation of PEM electrolyzers using GAN-based data augmentation and deep learning for MEA performance prediction.</p>
       <div class="project-card-tags">
         <span class="project-tag">PEM Electrolyzer</span>
         <span class="project-tag">Deep Learning</span>
@@ -438,12 +409,9 @@ title: Projects
       </div>
     </div>
     <div class="project-card-footer">
-      <a href="/posts/17052025/" class="project-link">
-        <i class="fas fa-book"></i> Read More
-      </a>
+      <a href="/posts/17052025/" class="project-link"><i class="fas fa-book"></i> Read More</a>
     </div>
   </div>
-
   <div class="project-card">
     <img src="/images/UCL-2024/sjtu-ucl-joint-framework.png" alt="UCL-SJTU Solar-Thermal PEM Platform" class="project-card-image">
     <div class="project-card-header">
@@ -454,9 +422,7 @@ title: Projects
       </div>
     </div>
     <div class="project-card-body">
-      <p class="project-card-description">
-        UCL–SJTU joint platform integrating solar thermal and PEM electrolysis, combining electrochemical testbed development with PVT-heat pump system simulation for green hydrogen production.
-      </p>
+      <p class="project-card-description">UCL–SJTU joint platform integrating solar thermal and PEM electrolysis, combining electrochemical testbed development with PVT-heat pump system simulation for green hydrogen production.</p>
       <div class="project-card-tags">
         <span class="project-tag">Solar-Thermal</span>
         <span class="project-tag">PEM Electrolysis</span>
@@ -464,12 +430,9 @@ title: Projects
       </div>
     </div>
     <div class="project-card-footer">
-      <a href="/posts/17052025/" class="project-link">
-        <i class="fas fa-book"></i> Read More
-      </a>
+      <a href="/posts/17052025/" class="project-link"><i class="fas fa-book"></i> Read More</a>
     </div>
   </div>
-
   <div class="project-card">
     <img src="/images/2025/tsinghua-university-collaboration.webp" alt="UCL-Tsinghua Collaboration" class="project-card-image">
     <div class="project-card-header">
@@ -480,9 +443,7 @@ title: Projects
       </div>
     </div>
     <div class="project-card-body">
-      <p class="project-card-description">
-        Collaboration with Tsinghua University on energy storage cost-benefit analysis, power-system operation optimization, and energy governance under market and policy constraints.
-      </p>
+      <p class="project-card-description">Collaboration with Tsinghua University on energy storage cost-benefit analysis, power-system operation optimization, and energy governance under market and policy constraints.</p>
       <div class="project-card-tags">
         <span class="project-tag">Energy Governance</span>
         <span class="project-tag">Power Systems</span>
@@ -490,12 +451,9 @@ title: Projects
       </div>
     </div>
     <div class="project-card-footer">
-      <a href="/posts/18052025/" class="project-link">
-        <i class="fas fa-book"></i> Read More
-      </a>
+      <a href="/posts/18052025/" class="project-link"><i class="fas fa-book"></i> Read More</a>
     </div>
   </div>
-
   <div class="project-card">
     <img src="/images/2025/cambridge-university-visit.jpg" alt="CATL Top-Talent Programme" class="project-card-image">
     <div class="project-card-header">
@@ -506,9 +464,7 @@ title: Projects
       </div>
     </div>
     <div class="project-card-body">
-      <p class="project-card-description">
-        Academic exchange at Cambridge on battery management systems, energy-intelligence architectures, and integration of physics-based electrochemical models with AI-enhanced methods.
-      </p>
+      <p class="project-card-description">Academic exchange at Cambridge on battery management systems, energy-intelligence architectures, and integration of physics-based electrochemical models with AI-enhanced methods.</p>
       <div class="project-card-tags">
         <span class="project-tag">Battery Technology</span>
         <span class="project-tag">AI for Energy</span>
@@ -516,12 +472,9 @@ title: Projects
       </div>
     </div>
     <div class="project-card-footer">
-      <a href="/posts/19112025/" class="project-link">
-        <i class="fas fa-book"></i> Read More
-      </a>
+      <a href="/posts/19112025/" class="project-link"><i class="fas fa-book"></i> Read More</a>
     </div>
   </div>
-
   <div class="project-card">
     <img src="/images/2025/ieee-conference-datacentre.png" alt="IEEE & IET Conference" class="project-card-image">
     <div class="project-card-header">
@@ -532,9 +485,7 @@ title: Projects
       </div>
     </div>
     <div class="project-card-body">
-      <p class="project-card-description">
-        Presentations on hybrid energy storage for data-centre resilience (IET) and electrochemical modeling of PEM water electrolyzers for loss decomposition (SPIES 2025, Shanghai).
-      </p>
+      <p class="project-card-description">Presentations on hybrid energy storage for data-centre resilience (IET) and electrochemical modeling of PEM water electrolyzers for loss decomposition (SPIES 2025, Shanghai).</p>
       <div class="project-card-tags">
         <span class="project-tag">Data Centres</span>
         <span class="project-tag">PEM Electrolysis</span>
@@ -542,12 +493,9 @@ title: Projects
       </div>
     </div>
     <div class="project-card-footer">
-      <a href="/posts/17082025/" class="project-link">
-        <i class="fas fa-book"></i> Read More
-      </a>
+      <a href="/posts/17082025/" class="project-link"><i class="fas fa-book"></i> Read More</a>
     </div>
   </div>
-
   <div class="project-card">
     <img src="/images/UCL-2024/climate-policy-framework.png" alt="Climate Policy Integration" class="project-card-image">
     <div class="project-card-header">
@@ -558,9 +506,7 @@ title: Projects
       </div>
     </div>
     <div class="project-card-body">
-      <p class="project-card-description">
-        Framework for integrating climate policy considerations into energy system optimization, supporting UK Net Zero initiatives and low-carbon energy transition.
-      </p>
+      <p class="project-card-description">Framework for integrating climate policy considerations into energy system optimization, supporting UK Net Zero initiatives and low-carbon energy transition.</p>
       <div class="project-card-tags">
         <span class="project-tag">Climate Policy</span>
         <span class="project-tag">Net Zero</span>
@@ -568,12 +514,9 @@ title: Projects
       </div>
     </div>
     <div class="project-card-footer">
-      <a href="/posts/10142024/" class="project-link">
-        <i class="fas fa-book"></i> Read More
-      </a>
+      <a href="/posts/10142024/" class="project-link"><i class="fas fa-book"></i> Read More</a>
     </div>
   </div>
-
   <div class="project-card">
     <div class="project-card-header">
       <h3 class="project-card-title">Blue Hydrogen Production Assessment</h3>
@@ -583,9 +526,7 @@ title: Projects
       </div>
     </div>
     <div class="project-card-body">
-      <p class="project-card-description">
-        Technical and economic performance assessment of blue hydrogen production using new configuration through comprehensive modeling and simulation.
-      </p>
+      <p class="project-card-description">Technical and economic performance assessment of blue hydrogen production using new configuration through comprehensive modeling and simulation.</p>
       <div class="project-card-tags">
         <span class="project-tag">Hydrogen</span>
         <span class="project-tag">Techno-Economic</span>
@@ -593,9 +534,7 @@ title: Projects
       </div>
     </div>
     <div class="project-card-footer">
-      <a href="https://scholar.google.com/citations?user=xWDB92cAAAAJ" target="_blank" class="project-link">
-        <i class="fas fa-external-link-alt"></i> Publication
-      </a>
+      <a href="https://scholar.google.com/citations?user=xWDB92cAAAAJ" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Publication</a>
     </div>
   </div>
 </div>
@@ -604,44 +543,37 @@ title: Projects
 
 ## 🔬 Research Methodology
 
-<div class="methodology-section">
+<div class="methodology-section" markdown="0">
   <h3>Core Methodological Approaches</h3>
   <div class="methodology-list">
     <div class="methodology-item">
       <h4>📊 Scenario-Based Analysis</h4>
       <p>Structured scenario design to explore baseline vs. adverse trajectories and stress-test system robustness</p>
     </div>
-
     <div class="methodology-item">
       <h4>🎲 Monte Carlo Simulation</h4>
       <p>Probabilistic sampling to quantify uncertainty propagation and identify dominant risk drivers</p>
     </div>
-
     <div class="methodology-item">
       <h4>🧮 Mathematical Optimization</h4>
       <p>Mixed-integer programming and convex optimization for decision-oriented system design</p>
     </div>
-
     <div class="methodology-item">
       <h4>🤖 Machine Learning</h4>
       <p>Deep learning and ensemble methods for performance prediction and pattern recognition</p>
     </div>
-
     <div class="methodology-item">
       <h4>⚡ Energy Flow Modeling</h4>
       <p>Component-level representation of supply, conversion, storage, and demand interactions</p>
     </div>
-
     <div class="methodology-item">
       <h4>📈 Sensitivity Analysis</h4>
       <p>Systematic parameter variation to identify critical factors and non-linear responses</p>
     </div>
-
     <div class="methodology-item">
       <h4>🔬 Electrochemical Modeling</h4>
       <p>Physics-based PEM electrolyzer models with experimental validation and loss decomposition analysis</p>
     </div>
-
     <div class="methodology-item">
       <h4>🌡️ Thermal-Electrical Coupling</h4>
       <p>Solar-thermal integration with electrochemical systems for enhanced hydrogen production efficiency</p>
