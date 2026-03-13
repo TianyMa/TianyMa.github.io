@@ -253,27 +253,27 @@ title: Projects
 ## 🏛️ Institutional Collaborations
 
 <div class="institutions-grid">
-  <a href="/posts/03242024" class="institution-card">
+  <a href="/posts/03242024/" class="institution-card">
     <img src="/images/logos/mit.webp" alt="MIT">
     <div class="institution-card-name">MIT</div>
   </a>
 
-  <a href="/posts/03182024" class="institution-card">
+  <a href="/posts/03182024/" class="institution-card">
     <img src="/images/logos/UCL_logo.png" alt="UCL">
     <div class="institution-card-name">University College London</div>
   </a>
 
-  <a href="/posts/03112024" class="institution-card">
+  <a href="/posts/03112024/" class="institution-card">
     <img src="/images/logos/UoB.png" alt="UoB">
     <div class="institution-card-name">University of Birmingham</div>
   </a>
 
-  <a href="/posts/03042024" class="institution-card">
+  <a href="/posts/03042024/" class="institution-card">
     <img src="/images/logos/UoN.png" alt="UoN">
     <div class="institution-card-name">University of Nottingham</div>
   </a>
 
-  <a href="/posts/02262024" class="institution-card">
+  <a href="/posts/02262024/" class="institution-card">
     <img src="/images/logos/SEU.png" alt="SEU">
     <div class="institution-card-name">Southeast University</div>
   </a>
@@ -330,7 +330,7 @@ title: Projects
       </div>
     </div>
     <div class="project-card-footer">
-      <a href="/posts/11102024" class="project-link">
+      <a href="/posts/11102024/" class="project-link">
         <i class="fas fa-book"></i> Read More
       </a>
     </div>
@@ -355,7 +355,7 @@ title: Projects
       </div>
     </div>
     <div class="project-card-footer">
-      <a href="/posts/17052025" class="project-link">
+      <a href="/posts/17052025/" class="project-link">
         <i class="fas fa-book"></i> Read More
       </a>
     </div>
@@ -406,7 +406,7 @@ title: Projects
       </div>
     </div>
     <div class="project-card-footer">
-      <a href="/posts/10142024" class="project-link">
+      <a href="/posts/10142024/" class="project-link">
         <i class="fas fa-book"></i> Read More
       </a>
     </div>
