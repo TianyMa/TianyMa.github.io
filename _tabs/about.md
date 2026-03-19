@@ -532,7 +532,7 @@ title: About
 </div>
 
 <div class="quote-box">
-  <p>"Building structured analytical frameworks to evaluate infrastructure transitions under deep uncertainty"</p>
+  <p>"Now water can flow or it can crash. Be water, my friend."</p>
 </div>
 
 <div style="text-align: center; padding: 2rem 0; color: #666;">
