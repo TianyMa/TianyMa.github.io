@@ -10,8 +10,6 @@
   function initVisitorMap() {
     // Always show the widget
 
-    console.log('Visitor map: Initializing...');
-
     // Create widget HTML
     const widget = document.createElement('div');
     widget.id = 'visitor-map-widget';
@@ -95,7 +93,6 @@
     `;
 
     document.body.appendChild(widget);
-    console.log('Visitor map: Widget created');
 
     // Setup toggle
     const toggleBtn = widget.querySelector('.visitor-map-toggle');
@@ -186,8 +183,8 @@
           updateCountries(stats.countries);
         }
       })
-      .catch(err => {
-        console.warn('Could not get location:', err);
+      .catch(() => {
+        // Silent fail - location is non-essential
         const locationEl = document.getElementById('vm-location');
         if (locationEl) {
           locationEl.innerHTML = `
@@ -243,6 +240,4 @@
   } else {
     initVisitorMap();
   }
-
-  console.log('Visitor map script loaded');
 })();

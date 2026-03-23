@@ -20,9 +20,7 @@ class ResearchMap {
     try {
       await this.loadLeaflet();
       this.createMap();
-      console.log('✅ Research map initialized');
     } catch (error) {
-      console.error('❌ Map initialization failed:', error);
       this.showFallback();
     }
   }
@@ -55,7 +53,6 @@ class ResearchMap {
   createMap() {
     const container = document.getElementById(this.containerId);
     if (!container) {
-      console.error('Map container not found:', this.containerId);
       return;
     }
 

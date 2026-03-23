@@ -93,8 +93,8 @@
             copyButton.innerHTML = '<i class="fas fa-copy"></i> Copy';
             copyButton.classList.remove('copied');
           }, 2000);
-        }).catch(function(err) {
-          console.error('Failed to copy code:', err);
+        }).catch(() => {
+          // Silent fail - clipboard may not be available
           copyButton.innerHTML = '<i class="fas fa-times"></i> Failed';
           setTimeout(function() {
             copyButton.innerHTML = '<i class="fas fa-copy"></i> Copy';
@@ -150,7 +150,7 @@
           twitter: `https://twitter.com/intent/tweet?url=${url}&text=${title}`,
           linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${url}`,
           email: `mailto:?subject=${title}&body=Check out this article: ${url}`,
-          facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`
+          facebook: `https://www.facebook.com/sharing/share-offsite/?url=${url}`
         };
 
         if (type === 'copy') {
@@ -311,10 +311,8 @@
       initSmoothScroll();
       initTOCHighlight();
       initPrintOptimization();
-
-      console.log('✅ Website enhancements initialized successfully');
     } catch (error) {
-      console.error('❌ Error initializing enhancements:', error);
+      // Silent fail - feature degradation only
     }
   }
 

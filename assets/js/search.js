@@ -18,9 +18,8 @@ class SiteSearch {
       await this.loadSearchData();
       this.createSearchUI();
       this.bindEvents();
-      console.log('✅ Search initialized with', this.searchData.length, 'posts');
     } catch (error) {
-      console.error('❌ Search initialization failed:', error);
+      // Silent fail - search is non-essential
     }
   }
 

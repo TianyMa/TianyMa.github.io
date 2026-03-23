@@ -19,7 +19,6 @@ class TagCloud {
   init() {
     const container = document.getElementById(this.containerId);
     if (!container) {
-      console.error('Tag cloud container not found:', this.containerId);
       return;
     }
 
@@ -97,7 +96,7 @@ class TagCloud {
           const tags = JSON.parse(tagsData);
           new TagCloud(container.id, tags);
         } catch (error) {
-          console.error('Invalid tag cloud data:', error);
+          // Silent fail - invalid tag data
         }
       }
     });

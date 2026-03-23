@@ -1,5 +1,48 @@
 /* assets/css/custom.scss */
 
+/* =========================================
+   CSS Custom Properties (Design Tokens)
+   ========================================= */
+
+:root {
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-success: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  --gradient-online: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  --color-primary: #667eea;
+  --color-primary-dark: #764ba2;
+  --color-accent: #89b4fa;
+  --color-surface-light: white;
+  --color-surface-dark: #1e1e2e;
+  --color-surface-dark-2: #181825;
+  --color-text-light: #555;
+  --color-text-dark: #bac2de;
+  --color-text-muted-light: #666;
+  --color-text-muted-dark: #9399b2;
+}
+
+/* =========================================
+   Accessibility - Skip to Content
+   ========================================= */
+
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #667eea;
+  color: white;
+  padding: 8px 16px;
+  z-index: 10000;
+  text-decoration: none;
+  border-radius: 0 0 4px 0;
+  transition: top 0.3s ease;
+}
+
+.skip-to-content:focus {
+  top: 0;
+  outline: 2px solid #764ba2;
+  outline-offset: 2px;
+}
+
 /* 引入 Chirpy 主题的主样式 */
 @import "themes/chirpy/assets/css/style";
 
@@ -80,4 +123,799 @@
 #news-list::-webkit-scrollbar-thumb {
     background-color: rgba(0,0,0,0.2);
     border-radius: 4px;
+}
+
+/* =========================================
+   About Page Component Styles
+   ========================================= */
+
+.about-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-hero h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  margin: 0;
+}
+
+.about-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.about-section h2 {
+  color: #667eea;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.about-section h2 i {
+  font-size: 1.5rem;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.research-item {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.research-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.research-item p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.about-section .timeline {
+  position: relative;
+  padding-left: 2rem;
+  display: block !important;
+}
+
+.about-section .timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+}
+
+.about-section .timeline-item {
+  position: relative;
+  padding-bottom: 2rem;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+.about-section .timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.5rem;
+  top: 0.25rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #667eea;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px #667eea;
+  flex-shrink: 0;
+}
+
+.about-section .timeline-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.1rem;
+  width: 100% !important;
+  order: 1;
+}
+
+.about-section .timeline-item .timeline-meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  width: 100% !important;
+  order: 2;
+}
+
+.about-section .timeline-item p {
+  margin: 0.25rem 0 0 0;
+  color: #555;
+  line-height: 1.6;
+  width: 100% !important;
+  order: 3;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  background: #667eea;
+  color: white;
+  transform: translateX(5px);
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  color: #667eea;
+}
+
+.contact-item:hover i {
+  background: white;
+  color: #667eea;
+}
+
+.contact-item-info {
+  flex: 1;
+}
+
+.contact-item-label {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-bottom: 0.25rem;
+}
+
+.contact-item-value {
+  font-weight: 600;
+}
+
+.quote-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.quote-box::before {
+  content: '"';
+  font-size: 4rem;
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+  opacity: 0.3;
+}
+
+.quote-box p {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.skill-item {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  background: #667eea;
+  color: white;
+  transform: scale(1.05);
+}
+
+.skill-item i {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.skill-item-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* =========================================
+   Projects Page Component Styles
+   ========================================= */
+
+.projects-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.projects-hero h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.projects-hero p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.institutions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.institution-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.institution-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.institution-card img {
+  width: 100%;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.institution-card-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.institutions-grid > :not(a),
+.focus-areas > :not(.focus-area-card),
+.projects-grid > :not(.project-card),
+.methodology-list > :not(.methodology-item) {
+  display: none !important;
+}
+
+.focus-areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.focus-area-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #667eea;
+}
+
+.focus-area-card h3 {
+  margin: 0 0 1rem 0;
+  color: #667eea;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.focus-area-card h3 i {
+  font-size: 1.5rem;
+}
+
+.focus-area-card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.8;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.project-card-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+}
+
+.project-card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.project-card-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.project-card-body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-description {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.project-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-tag {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.project-card-footer {
+  padding: 0 1.5rem 1.5rem;
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.project-link {
+  flex: 1;
+  text-align: center;
+  padding: 0.75rem;
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background: #5568d3;
+  transform: scale(1.05);
+}
+
+.project-link i {
+  margin-right: 0.5rem;
+}
+
+.methodology-section {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.methodology-section h3 {
+  color: #333;
+  margin-top: 0;
+}
+
+.methodology-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.methodology-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.methodology-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: #667eea;
+  font-size: 1rem;
+}
+
+.methodology-item p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.project-status {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.status-active {
+  background: rgba(255,255,255,0.2);
+  color: #a6e3a1;
+}
+
+.status-completed {
+  background: rgba(255,255,255,0.2);
+  color: #f9e2af;
+}
+
+/* =========================================
+   Analytics Page Component Styles
+   ========================================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-box {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stat-box-number {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stat-box-label {
+  font-size: 1rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.publication-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #2196F3;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publication-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.publication-card h4 {
+  margin: 0 0 0.5rem 0;
+  color: #2196F3;
+  font-size: 1.1rem;
+}
+
+.publication-authors {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0 0 0.5rem 0;
+  font-style: italic;
+}
+
+.publication-venue {
+  color: #333;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0 0 0.75rem 0;
+}
+
+.publication-meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.publication-year {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.publication-citations {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.research-areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.research-area-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+.research-area-card h4 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.research-area-card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.collaborators-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  color: white;
+  margin: 2rem 0;
+}
+
+.collaborators-section h3 {
+  color: white;
+  margin-top: 0;
+}
+
+.collaborators-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.collaborator-card {
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.collaborator-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.collaborator-affiliation {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* =========================================
+   Responsive Breakpoints
+   ========================================= */
+
+@media (max-width: 768px) {
+  .about-hero h1,
+  .projects-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero p,
+  .projects-hero p {
+    font-size: 1rem;
+  }
+
+  .research-grid,
+  .contact-grid,
+  .skills-grid,
+  .institutions-grid,
+  .focus-areas,
+  .projects-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .institutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-box-number {
+    font-size: 2rem;
+  }
+
+  .research-areas {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   Dark Mode Overrides
+   ========================================= */
+
+[data-mode="dark"] {
+  .about-section,
+  .institution-card,
+  .focus-area-card,
+  .project-card,
+  .methodology-item {
+    background: #1e1e2e;
+    color: #cdd6f4;
+  }
+
+  .about-section h2,
+  .focus-area-card h3 {
+    color: #89b4fa;
+  }
+
+  .focus-area-card {
+    border-top-color: #89b4fa;
+  }
+
+  .about-section p,
+  .about-section .timeline-item p,
+  .institution-card-name,
+  .project-card-description,
+  .methodology-item p,
+  .focus-area-card p,
+  .research-item p {
+    color: #bac2de;
+  }
+
+  .about-section .research-item h4,
+  .about-section .timeline-item h4 {
+    color: #cdd6f4;
+  }
+
+  .about-section .timeline-item .timeline-meta,
+  .contact-item-label {
+    color: #9399b2;
+  }
+
+  .contact-item-value {
+    color: #cdd6f4;
+  }
+
+  .contact-item i {
+    background: #313244;
+    color: #89b4fa;
+  }
+
+  .skill-item {
+    background: #181825;
+    color: #cdd6f4;
+  }
+
+  .about-section .timeline-item::before {
+    border-color: #1e1e2e;
+  }
+
+  .research-item,
+  .skill-item,
+  .contact-item {
+    background: #181825;
+  }
+
+  .methodology-section {
+    background: #181825;
+  }
+
+  .project-tag {
+    background: #313244;
+    color: #89b4fa;
+  }
+
+  .institution-card img {
+    background: white;
+    border-radius: 8px;
+    padding: 0.5rem;
+  }
 }

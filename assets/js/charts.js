@@ -13,9 +13,8 @@ class ResearchCharts {
     try {
       await this.loadChartJS();
       this.initializeCharts();
-      console.log('✅ Charts initialized');
     } catch (error) {
-      console.error('❌ Charts initialization failed:', error);
+      // Silent fail - charts are non-essential
     }
   }
 
@@ -42,7 +41,7 @@ class ResearchCharts {
           const data = JSON.parse(dataAttr);
           this.createChart(canvas.id, type, data);
         } catch (error) {
-          console.error('Invalid chart data:', error);
+          // Silent fail - invalid chart data
         }
       }
     });
@@ -51,7 +50,6 @@ class ResearchCharts {
   createChart(canvasId, type, data, options = {}) {
     const canvas = document.getElementById(canvasId);
     if (!canvas) {
-      console.error('Canvas not found:', canvasId);
       return null;
     }
 
