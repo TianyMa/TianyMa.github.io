@@ -4,7 +4,6 @@ date: 2024-01-27 11:33:00 +0800
 authors: [tianyi_ma]
 categories: [Lab]
 tags: [typography]
-pin: true
 math: true
 mermaid: true
 image:

@@ -24,25 +24,57 @@ Nothing in this list was invented or substituted with a guess.
 
 ---
 
-## B. Claims retained on the public site — source not in repo
+## B. Employment claims — REMOVED from the public site in the second pass
 
-These are the quantitative achievements attached to the two employment entries in
-`_tabs/about.md`. They are unchanged: not altered, rounded or embellished. Please confirm
-each against your own records.
+A repository-wide search for evidence of either employment found **none**:
 
-| Figure | Entry | Status |
-|---|---|---|
-| Tier III data centre, **12.895 MW** baseline IT load | Huawei European Research Institute | Retained, source not in repo |
-| **50% CO₂ reduction** through bounded valuation corridors | Huawei European Research Institute | Retained, source not in repo |
-| 20-year DCF valuation models | Huawei European Research Institute | Retained, source not in repo |
-| **CAGR 52%** during PEM scale-up | GEIRI | Retained, source not in repo |
-| Polarisation **RMSE < 15 mV**, lifetime drift **±3%** | GEIRI | Retained, source not in repo |
-| **>300** Monte Carlo runs per case; P10/P50/P90 ranges | GEIRI | Retained, source not in repo |
+- No post, page or data file mentions Huawei or GEIRI employment.
+- The only Huawei/GEIRI artefacts in the repo are two logo images
+  (`images/logos/HW.png`, `images/logos/GEIRI.png`), one of which appears solely as
+  decoration in the unrendered `_posts/Template.txt`.
+- Two 2024 posts mention "Munich Intersolar Conference Attendance" in a weekly
+  time-tracking table. That is conference attendance, not evidence of employment.
 
-Job titles retained verbatim and not upgraded:
+The employer names, locations and dates were **retained** because you supplied and
+corrected them directly (Huawei end date → Dec 2024; GEIRI location → Berlin /
+Birmingham). First-party instruction is the strongest evidence available and is not
+"old-file inertia".
 
-- "Quantitative Researcher — Infrastructure & Energy Investments" (Huawei European Research Institute, Munich)
-- "Quantitative Analyst — Early-Stage Energy Infrastructure Screening" (Global Energy Interconnection Research Institute, Berlin / Birmingham)
+Everything below was **removed from `_tabs/about.md`** because nothing in the repository
+supports it. Nothing was reworded upward; the figures are reproduced here verbatim so you
+can restore any you can evidence.
+
+**Job titles removed** (present only in the pre-refresh file, never confirmed; they read as
+self-authored positioning rather than formal titles):
+
+- "Quantitative Researcher — Infrastructure & Energy Investments" (Huawei)
+- "Quantitative Analyst — Early-Stage Energy Infrastructure Screening" (GEIRI)
+
+**Quantitative claims removed:**
+
+| Figure | Entry |
+|---|---|
+| 20-year DCF valuation models for energy-intensive real assets | Huawei |
+| Tier III data centre, **12.895 MW** baseline IT load | Huawei |
+| Monte Carlo frameworks for return distribution and tail exposure analysis | Huawei |
+| Capital allocation across hybrid portfolios (PV, storage, hydrogen) under CAPEX-, total-cost- and emissions-oriented objectives | Huawei |
+| **50% CO₂ reduction** within bounded valuation corridors | Huawei |
+| Techno-economic inflection thresholds during PEM scale-up, **CAGR 52%** | GEIRI |
+| Polarisation **RMSE < 15 mV**, lifetime drift **±3%** | GEIRI |
+| **>300** Monte Carlo runs per case; P10/P50/P90 investment ranges | GEIRI |
+
+**What now appears on the page** — employer, location, dates, and a single non-numeric
+scope line:
+
+- Huawei European Research Institute — Munich — May 2023 – Dec 2024 —
+  "Techno-economic and system modelling of energy infrastructure."
+- Global Energy Interconnection Research Institute — Berlin / Birmingham —
+  Oct 2021 – Apr 2023 — "Modelling and techno-economic assessment of PEM electrolysis systems."
+
+⚠️ **The two scope sentences were written during this refresh**, inferred from your
+publication record rather than from any stated job description. They are deliberately
+minimal, but they are still my wording, not yours. **Replace them with your actual role
+descriptions, and restore any figures you can evidence.**
 
 ---
 
@@ -120,3 +152,28 @@ was closed off rather than completed.
 - **Giscus / utterances config** still points at the GitHub repository `tianyma/tianyma.github.io`.
   That is the real repository, not a site URL, so it was left unchanged — the `repo_id` is bound
   to it. Only the site `url` moved to `steedpower.com`.
+
+---
+
+## H. Second-pass removals (production audit)
+
+A second audit was run against the refresh branch before merge. These items were removed or
+reduced because repository evidence did not support them.
+
+| Claim | Was on | Action | Why |
+|---|---|---|---|
+| UCL–SJTU "Solar-thermal and PEM electrolysis platform" as a **project** | Research page, home page | **Removed from both** | The only source is `_posts/2025-05-17-17052025.md`, which is titled "Joint Funding **Application**" and is written throughout in proposal language ("Lead Applicants", "Expected Impact", "Planned SJTU visit"). Whether it was funded or started is not recorded anywhere. Presenting a proposal as a running project is an over-claim. **Confirm the outcome and I will restore it with an accurate status.** |
+| "UCL Funding: **£10,000**" / "SJTU Funding: **¥50,000**" | `_posts/2025-05-17-17052025.md` | **Amounts removed**, purpose text kept | Specific unverifiable monetary figures on a public page. |
+| "Mr. Tianyi MA, **Ph.D. Candidate**, University College London" | `_posts/2025-05-17-17052025.md` | Reduced to "Tianyi Ma, University College London" | Asserted current doctoral candidacy. The PhD was awarded 28 July 2026. |
+| "University College London **& Southeast University**" on the PEM electrolyser project | Research page | Reduced to "University College London" | Co-author affiliations are not recorded in the repo. The UCL attribution is supported (Spataru and Nikiforidis are co-authors on the IJHE paper). |
+| `🤝 Special Thanks to All of You` linking to `/sponsor/` | Global footer, **every page** (`_data/locales/en.yml`) | Removed (`meta: ''`) | Pointed at the now-unpublished sponsor page — a **404 on every page of the site**. The markup was also malformed (`</href>` instead of `</a>`), leaving the `<a>` unclosed. |
+
+### Still unverified and still on the site
+
+- **UCL–Tsinghua collaboration** (`_posts/2025-05-18-18052025.md`). Self-authored, dated,
+  describes an "ongoing" collaboration as of May 2025. Left as a dated archive record; it is
+  **not** presented as a project on any professional page. Confirm whether it is still active.
+- **CATL Top-Talent Programme** (`_posts/2025-11-19-19112025.md`). Self-authored record of
+  attendance. Not on any professional page. No award or selection claim is made.
+- **"Distinction"** on the Warwick MScR and Nottingham MSc entries, and the Warwick/Nottingham
+  date ranges. These come from your pass-one ground-truth list, not from the repo.

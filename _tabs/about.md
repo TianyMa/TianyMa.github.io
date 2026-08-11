@@ -58,14 +58,14 @@ title: About
   <h2>Selected experience</h2>
   <div class="entry-list">
     <article>
-      <h3 class="entry__title">Quantitative Researcher — Infrastructure &amp; Energy Investments</h3>
-      <p class="entry__meta"><span>Huawei European Research Institute, Munich</span><span>May 2023 – Dec 2024</span></p>
-      <p class="entry__desc">Developed 20-year DCF valuation models for energy-intensive real assets (Tier III data centre, 12.895 MW baseline IT load). Implemented Monte Carlo frameworks for return distribution and tail exposure analysis. Structured capital allocation across hybrid infrastructure portfolios (PV, storage, hydrogen) under CAPEX-, total-cost- and emissions-oriented objectives, including a case achieving 50% CO<sub>2</sub> reduction within bounded valuation corridors.</p>
+      <h3 class="entry__title">Huawei European Research Institute</h3>
+      <p class="entry__meta"><span>Munich</span><span>May 2023 – Dec 2024</span></p>
+      <p class="entry__desc">Techno-economic and system modelling of energy infrastructure.</p>
     </article>
     <article>
-      <h3 class="entry__title">Quantitative Analyst — Early-Stage Energy Infrastructure Screening</h3>
-      <p class="entry__meta"><span>Global Energy Interconnection Research Institute, Berlin / Birmingham</span><span>Oct 2021 – Apr 2023</span></p>
-      <p class="entry__desc">Defined techno-economic inflection thresholds for PEM infrastructure during rapid scale-up (CAGR 52%). Built a calibrated multiscale modelling architecture (polarisation RMSE &lt; 15 mV, lifetime drift ±3%). Quantified degradation uncertainty into P10/P50/P90 investment ranges via Monte Carlo ensembles (&gt;300 runs per case).</p>
+      <h3 class="entry__title">Global Energy Interconnection Research Institute</h3>
+      <p class="entry__meta"><span>Berlin / Birmingham</span><span>Oct 2021 – Apr 2023</span></p>
+      <p class="entry__desc">Modelling and techno-economic assessment of PEM electrolysis systems.</p>
     </article>
   </div>
 </section>

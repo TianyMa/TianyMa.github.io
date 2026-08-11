@@ -32,27 +32,13 @@ title: Research
         <a href="{{ '/publications/' | relative_url }}">Multiscale modelling and degradation-aware assessment of PEM water electrolysers</a>
         <span class="status">Completed</span>
       </h3>
-      <p class="entry__meta"><span>University College London &amp; Southeast University</span><span>2024–2026</span></p>
+      <p class="entry__meta"><span>University College London</span><span>2024–2026</span></p>
       <p class="entry__desc">Physics-based electrolyser models calibrated against experimental data, with loss decomposition and degradation modelling carried through to durability and lifecycle cost. Published in the <em>International Journal of Hydrogen Energy</em> and presented at SPIES 2025.</p>
       <ul class="entry__tags">
         <li>PEM electrolysis</li>
         <li>Degradation</li>
         <li>Experimental validation</li>
         <li>Lifecycle cost</li>
-      </ul>
-    </article>
-
-    <article>
-      <h3 class="entry__title">
-        <a href="{{ '/posts/17052025/' | relative_url }}">Solar-thermal and PEM electrolysis platform</a>
-        <span class="status">2025–2026</span>
-      </h3>
-      <p class="entry__meta"><span>UCL &amp; Shanghai Jiao Tong University</span></p>
-      <p class="entry__desc">Joint platform integrating solar-thermal input with PEM electrolysis, combining electrochemical testbed development with PVT–heat-pump system simulation for hydrogen production.</p>
-      <ul class="entry__tags">
-        <li>Solar-thermal</li>
-        <li>PEM electrolysis</li>
-        <li>System simulation</li>
       </ul>
     </article>
 

@@ -121,7 +121,7 @@ assets:
     env: # [development|production]
 
 pwa:
-  enabled: true # the option for PWA feature
+  enabled: false # the option for PWA feature
 
 # The home page is a landing page, not a paginated blog feed; the post index
 # lives at /archives/. Leaving `paginate` set would make jekyll-paginate emit

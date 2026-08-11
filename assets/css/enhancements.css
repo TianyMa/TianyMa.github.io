@@ -48,6 +48,19 @@ html[data-mode='light'] {
 }
 
 /* --------------------------------------------------------------------------
+   Side panel
+
+   The "Recently Updated" / "Trending Tags" blocks are suppressed via empty
+   overrides of the theme includes. Collapse the now-empty container so it
+   reserves no vertical space. The post table of contents lives outside
+   `.access` and is unaffected.
+-------------------------------------------------------------------------- */
+
+#panel-wrapper .access {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
    Hero — first viewport of the home page
 -------------------------------------------------------------------------- */
 
