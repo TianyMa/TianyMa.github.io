@@ -1,0 +1,18 @@
+{% comment %}
+  Chirpy's documented <head> extension point (see the theme's _includes/head.html).
+  Using it means this site no longer needs to override _layouts/default.html,
+  and custom CSS is loaded in <head> rather than before </body> (no FOUC).
+
+  Font Awesome is NOT loaded here: Chirpy's own head.html already loads it.
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ '/assets/css/enhancements.css' | relative_url }}">
+
+{% if page.charts %}
+  <link rel="stylesheet" href="{{ '/assets/css/charts.css' | relative_url }}">
+  <script defer src="{{ '/assets/js/charts.js' | relative_url }}"></script>
+{% endif %}
+
+{% include schema-website.html %}
+{% include schema-person.html %}
+{% include schema-article.html %}

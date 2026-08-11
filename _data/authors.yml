@@ -1,0 +1,7 @@
+# Post authors, referenced from post front matter via `authors: [<key>]`.
+# Chirpy reads this file; the previous `author_id:` key was not a theme field
+# and had no effect.
+
+tianyi_ma:
+  name: Tianyi Ma
+  url: https://steedpower.com

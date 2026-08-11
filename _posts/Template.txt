@@ -1,21 +1,18 @@
 ---
 title: Welcome to Tianyi's Lab
 date: 2024-01-27 11:33:00 +0800
-author_id:
-  - name: Tianyi MA
-    github: TSdreamer
-    url: tsdreamer.github.io
+authors: [tianyi_ma]
 categories: [Lab]
 tags: [typography]
 pin: true
 math: true
 mermaid: true
 image:
-  path: /images/template-markdown-demo.png
+  path: /images/template-markdown-demo.webp
   alt: Below is the template for the subsequent paragraph.
 ---
 
-This post is to show Markdown syntax rendering on [**TSdreamer**](https://github.com/TSdreamer), you can also use it as an example of writing. Now, let's start looking at text and typography.
+This post is to show Markdown syntax rendering on [**TianyMa**](https://github.com/TianyMa), you can also use it as an example of writing. Now, let's start looking at text and typography.
 
 ## Headings
 

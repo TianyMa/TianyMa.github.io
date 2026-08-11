@@ -2,10 +2,7 @@
 title: "Hello, I am Tianyi"
 description: "Introduction to my personal lab, research interests, and the technology behind this website."
 date: 2024-01-28 12:00:00 -500
-author_id:
-  - name: Tianyi MA
-    github: TSdreamer
-    url: https://tianyma.github.io
+authors: [tianyi_ma]
 pin: true
 categories: [Homelab]
 tags: [introduction]

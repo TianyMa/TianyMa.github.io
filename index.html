@@ -1,4 +1,101 @@
 ---
-layout: home
+layout: home-professional
 # Index page
 ---
+
+<header class="hero">
+  <h1 class="hero__name">Tianyi Ma</h1>
+  <p class="hero__positioning">Quantitative Modelling &amp; Optimisation under Uncertainty for Energy and AI Infrastructure</p>
+  <p class="hero__credential">PhD in Systems Modelling and Optimisation, University College London</p>
+  <ul class="hero__links">
+    <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
+    <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+    <li><a href="https://scholar.google.com/citations?user=xWDB92cAAAAJ">Google Scholar</a></li>
+    <li><a href="https://github.com/TianyMa">GitHub</a></li>
+    <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+  </ul>
+</header>
+
+<section class="section">
+  <h2>Focus</h2>
+  <div class="focus-grid">
+    <div class="focus-card">
+      <h3>Quantitative Systems &amp; Uncertainty</h3>
+      <p>Optimisation, Monte Carlo simulation, scenario analysis, sensitivity analysis, stochastic decision models.</p>
+    </div>
+    <div class="focus-card">
+      <h3>AI &amp; Data-Centre Infrastructure</h3>
+      <p>Infrastructure sizing, energy demand, storage, resilience, techno-economics, resource allocation.</p>
+    </div>
+    <div class="focus-card">
+      <h3>Electrochemical &amp; Energy Systems</h3>
+      <p>PEM electrolysis, degradation, lifecycle economics, hybrid energy storage.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Selected research</h2>
+  <div class="entry-list">
+    <article>
+      <h3 class="entry__title">Sizing of PEM-integrated hybrid storage for data-centre resilience</h3>
+      <p class="entry__meta"><span>University College London</span><span>2024–2026</span></p>
+      <p class="entry__desc">Mixed-integer sizing optimisation of a battery–hydrogen hybrid storage system for data-centre reliability, with Monte Carlo uncertainty quantification over multi-decade planning horizons.</p>
+    </article>
+    <article>
+      <h3 class="entry__title">Degradation-aware assessment of PEM water electrolysers</h3>
+      <p class="entry__meta"><span>Published 2026</span><span>International Journal of Hydrogen Energy</span></p>
+      <p class="entry__desc">Assessment of the dominant factors governing performance, durability and cost, linking electrochemical degradation to replacement cycles and lifecycle economics.</p>
+    </article>
+    <article>
+      <h3 class="entry__title">Solar-thermal and PEM electrolysis platform (UCL–SJTU)</h3>
+      <p class="entry__meta"><span>UCL &amp; Shanghai Jiao Tong University</span><span>2025–2026</span></p>
+      <p class="entry__desc">Joint platform combining an electrochemical testbed with PVT–heat-pump system simulation for hydrogen production.</p>
+    </article>
+  </div>
+  <p class="section__more"><a href="{{ '/research/' | relative_url }}">All research →</a></p>
+</section>
+
+<section class="section">
+  <h2>Selected publications</h2>
+  <div class="pub-list">
+    <div class="pub">
+      <p class="pub__title">Degradation-aware assessment of dominant factors in performance, durability, and cost of proton exchange membrane water electrolysers</p>
+      <p class="pub__authors"><span class="self">T Ma</span>, G Qiao, X Zhang, D Hou, C Spataru, G Nikiforidis, S Du</p>
+      <p class="pub__venue">International Journal of Hydrogen Energy 264, 156855 (2026)</p>
+    </div>
+    <div class="pub">
+      <p class="pub__title">System modelling and sizing optimization of PEM-integrated hybrid energy storage for data centre resilience</p>
+      <p class="pub__authors"><span class="self">H Ma</span>, G Nikiforidis, C Spataru</p>
+      <p class="pub__venue">IET Conference Proceedings CP963, 2025 (44), 149–154</p>
+    </div>
+    <div class="pub">
+      <p class="pub__title">Technical and economic performance assessment of blue hydrogen production using new configuration through modelling and simulation</p>
+      <p class="pub__authors">Y Li, J Ren, <span class="self">H Ma</span>, AN Campbell</p>
+      <p class="pub__venue">International Journal of Greenhouse Gas Control 134, 104112 (2024)</p>
+    </div>
+  </div>
+  <p class="section__more"><a href="{{ '/publications/' | relative_url }}">All publications →</a></p>
+</section>
+
+<section class="section">
+  <h2>Recent writing</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit: 3 %}
+      <li>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %Y' }}</time>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <p class="section__more"><a href="{{ '/archives/' | relative_url }}">All posts →</a></p>
+</section>
+
+<section class="section">
+  <h2>Contact</h2>
+  <p class="lead">Open to conversations on quantitative research, infrastructure modelling and energy systems.</p>
+  <ul class="contact-list">
+    <li><span class="label">Email</span><a href="mailto:Tianyi-ma@outlook.com">Tianyi-ma@outlook.com</a></li>
+    <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/tyma">linkedin.com/in/tyma</a></li>
+  </ul>
+</section>
