@@ -5,9 +5,9 @@
   width: 100%;
   margin: 2rem 0;
   padding: 1.5rem;
-  background: var(--card-bg, white);
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: var(--card-bg);
+  border-radius: 4px;
+  border: 1px solid var(--card-border-color);
 }
 
 .chart-title {
@@ -36,17 +36,16 @@
 }
 
 .stat-card {
-  background: var(--card-bg, white);
-  border-radius: 12px;
+  background: var(--card-bg);
+  border-radius: 4px;
   padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--card-border-color);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: border-color 0.2s ease;
 }
 
 .stat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  border-color: var(--accent-quiet);
 }
 
 .stat-icon {
@@ -56,19 +55,19 @@
 }
 
 .stat-icon.publications {
-  color: #2196F3;
+  color: var(--accent);
 }
 
 .stat-icon.projects {
-  color: #4CAF50;
+  color: var(--accent);
 }
 
 .stat-icon.collaborations {
-  color: #FF9800;
+  color: var(--accent);
 }
 
 .stat-icon.citations {
-  color: #9C27B0;
+  color: var(--accent);
 }
 
 .stat-number {
@@ -81,7 +80,7 @@
 
 .stat-label {
   font-size: 0.9375rem;
-  color: var(--text-muted-color, #666);
+  color: var(--text-muted-color);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -94,11 +93,11 @@
 }
 
 .stat-change.positive {
-  color: #4CAF50;
+  color: var(--accent);
 }
 
 .stat-change.negative {
-  color: #F44336;
+  color: var(--text-muted-color);
 }
 
 .stat-change i {
@@ -170,7 +169,7 @@
   align-items: center;
   justify-content: center;
   height: 300px;
-  color: var(--text-muted-color, #666);
+  color: var(--text-muted-color);
 }
 
 .chart-loading i {

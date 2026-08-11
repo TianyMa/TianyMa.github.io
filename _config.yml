@@ -22,35 +22,32 @@ timezone: Europe/London
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Tianyi(Haotian) MA # the main title
+title: Tianyi Ma # the main title
 
-tagline: Welcome to follow my channel and join me in building a sustainable data-driven future. # it will display as the sub-title
+tagline: Quantitative Modelling & Optimisation under Uncertainty for Energy and AI Infrastructure # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  I am here to use data-driven methods to acclerate the arrival of a sustainable future.
+  Quantitative modelling and optimisation under uncertainty for energy and AI infrastructure:
+  Monte Carlo simulation, mixed-integer optimisation and lifecycle modelling for infrastructure decisions.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://tsdreamer.github.io" # the base hostname & protocol for your site
+url: "https://steedpower.com" # the base hostname & protocol for your site
 
+github:
+  username: TianyMa
 
-twitter:
-  username: TianyiM57651  # change to your twitter username
 linkedin:
-  username: TYMa # change to your twitter username  
-Instagram:
-  username: kirinfly # change to your twitter username  
+  username: TYMa
 
 social:
-  # This website is designed and developed by Mr.Tianyi MA.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Tianyi MA
-  email: Tianyi-ma@outlook.com # change to your email address
+  name: Tianyi Ma
+  email: Tianyi-ma@outlook.com
   links: # The first element serves as the copyright owner's link
     - https://github.com/TianyMa
-    - https://twitter.com/TianyiM57651 # change to your twitter homepage
-    - https://www.instagram.com/kirinfly/
     - https://www.linkedin.com/in/tyma/
+    - https://scholar.google.com/citations?user=xWDB92cAAAAJ
 
 google_site_verification: # fill in to your verification string
 
@@ -124,12 +121,11 @@ assets:
     env: # [development|production]
 
 pwa:
-  enabled: true # the option for PWA feature
+  enabled: false # the option for PWA feature
 
-paginate: 8
-
-# The base URL of your site
-baseurl: ""
+# The home page is a landing page, not a paginated blog feed; the post index
+# lives at /archives/. Leaving `paginate` set would make jekyll-paginate emit
+# /page2/, /page3/ … duplicates of the landing page.
 
 #--------------- The following options are not recommended to be modified ------------------
 
@@ -148,11 +144,6 @@ collections:
   tabs:
     output: true
     sort_by: order
-
-# The following options are used to customize the theme
-chirpy:
-  after_footer:
-    - "news-widget.html"
 
 defaults:
   - scope:
